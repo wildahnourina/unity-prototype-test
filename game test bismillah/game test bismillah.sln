@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity", "spine-unity.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-examples-editor", "spine-unity-examples-editor.csproj", "{B5A45BF2-9282-50E0-FEC7-37991FF4082A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EE4CF264-1ABA-B70E-AE74-6A581638D51A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{B5A45BF2-9282-50E0-FEC7-37991FF4082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5A45BF2-9282-50E0-FEC7-37991FF4082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5A45BF2-9282-50E0-FEC7-37991FF4082A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4CF264-1ABA-B70E-AE74-6A581638D51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4CF264-1ABA-B70E-AE74-6A581638D51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4CF264-1ABA-B70E-AE74-6A581638D51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4CF264-1ABA-B70E-AE74-6A581638D51A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
