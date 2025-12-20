@@ -1,4 +1,6 @@
 using UnityEngine;
+using Spine.Unity;
+using Spine;
 
 public abstract class EntityState
 {
@@ -7,6 +9,7 @@ public abstract class EntityState
     protected StateMachine stateMachine;
     protected string animName;
     protected SpineAnimator anim;
+    protected bool loopAnim = true;
 
     public EntityState(StateMachine stateMachine, SpineAnimator anim, string animName)
     {
@@ -17,7 +20,7 @@ public abstract class EntityState
 
     public virtual void Enter()
     {
-        anim.Play(animName);
+        anim.Play(animName, loopAnim);
     }
 
     public virtual void Update() { }

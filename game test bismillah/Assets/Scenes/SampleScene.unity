@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 651943743}
   - component: {fileID: 651943742}
   - component: {fileID: 651943744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 1233491950}
   - component: {fileID: 1233491949}
   - component: {fileID: 1233491948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1233491950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,6 +569,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a12749c62dbaff4fbdf2e5af21686c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheckDistance: 1.33
+  wallCheckDistance: 0.6
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 128
+  groundCheck: {fileID: 1233491951}
+  wallCheck: {fileID: 1233491951}
+  moveSpeed: 7
+  jumpForce: 15
 --- !u!4 &1233491951
 Transform:
   m_ObjectHideFlags: 0
