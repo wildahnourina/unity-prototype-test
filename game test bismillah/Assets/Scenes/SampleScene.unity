@@ -576,8 +576,9 @@ MonoBehaviour:
     m_Bits: 128
   groundCheck: {fileID: 1233491951}
   wallCheck: {fileID: 1233491951}
-  moveSpeed: 7
-  jumpForce: 15
+  moveSpeed: 4
+  jumpForce: 5
+  inAirMultiplier: 0.2
 --- !u!4 &1233491951
 Transform:
   m_ObjectHideFlags: 0

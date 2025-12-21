@@ -8,12 +8,17 @@ public class Player : Entity
     public PlayerInputSet input { get; private set; }
 
     public Player_IdleState idleState { get; private set; }
-    public Player_MoveState moveState { get; private set; }
+    public Player_WalkState walkState { get; private set; }
+    public Player_RunState runState { get; private set; }
+    public Player_JumpState jumpState { get; private set; }
+    public Player_FallState fallState { get; private set; }
 
     public Vector2 moveInput { get; private set; }
     [Header("Movement Details")]
     public float moveSpeed;
     public float jumpForce = 5;
+    [Range(0, 1)]
+    public float inAirMultiplier = .4f;
 
     protected override void Awake()
     {
@@ -21,7 +26,10 @@ public class Player : Entity
         input = new PlayerInputSet();
 
         idleState = new Player_IdleState(this, stateMachine, anim, "idle");
-        moveState = new Player_MoveState(this, stateMachine, anim, "walk");
+        walkState = new Player_WalkState(this, stateMachine, anim, "walk");
+        runState = new Player_RunState(this, stateMachine, anim, "run");
+        jumpState = new Player_JumpState(this, stateMachine, anim, "jump");
+        fallState = new Player_FallState(this, stateMachine, anim, "fall");
     }
 
     protected override void Start()

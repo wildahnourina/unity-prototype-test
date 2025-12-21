@@ -19,7 +19,7 @@ public class Player_IdleState : Player_GroundedState
             return;
 
         if (player.moveInput.x != 0)
-            stateMachine.ChangeState(player.moveState);
+            stateMachine.ChangeState(player.walkState);
     }
 
 }
