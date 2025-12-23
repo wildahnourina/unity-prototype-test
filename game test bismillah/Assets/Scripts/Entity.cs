@@ -1,4 +1,5 @@
 using Spine.Unity;
+using System;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
@@ -65,6 +66,7 @@ public class Entity : MonoBehaviour
         facingRight = !facingRight;
         facingDirection = facingDirection * -1;
     }
+
     private void HandleCollisionDetection()
     {
         groundDetected = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
