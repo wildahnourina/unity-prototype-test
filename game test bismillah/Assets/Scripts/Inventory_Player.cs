@@ -6,6 +6,13 @@ public class Inventory_Player : MonoBehaviour
     public int maxInventorySize = 10;
     public List<Inventory_Item> itemList = new List<Inventory_Item>();
 
+    public Inventory_Item GetItemById(string itemId)
+    {
+        if (itemList == null) return null;
+
+        return itemList.Find(item => item != null && item.itemData != null && item.itemData.itemId == itemId);
+    }
+
     public bool CanAddItem(Inventory_Item itemToAdd)
     {
         bool hasStackable = FindStackable(itemToAdd) != null;
@@ -34,4 +41,15 @@ public class Inventory_Player : MonoBehaviour
         else
             itemList.Add(itemToAdd);// kalo gak ada, ya masuk ke slot baru
     }
+
+    public void RemoveOneItem(Inventory_Item itemToRemove)
+    {
+        Inventory_Item itemInInventory = itemList.Find(item => item == itemToRemove);
+
+        if (itemInInventory.stackSize > 1)
+            itemInInventory.RemoveStack();
+        else
+            itemList.Remove(itemToRemove);
+    }
+
 }

@@ -61,6 +61,8 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Object_Interactable_Door.cs" />
+    <Compile Include="Assets\Scripts\Object_Interactable.cs" />
     <Compile Include="Assets\Scripts\Object_ItemPickup.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
     <Compile Include="Assets\Scripts\PlayerStates\Player_WalkState.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Scripts\SpineAnimator.cs" />
     <Compile Include="Assets\Scripts\PlayerStates\Player_GroundedState.cs" />
     <Compile Include="Assets\InputSystem\PlayerInputSet.cs" />
+    <Compile Include="Assets\Scripts\Object_Interactable_Locker.cs" />
     <Compile Include="Assets\Scripts\PlayerStates\Player_RunState.cs" />
     <Compile Include="Assets\Scripts\PlayerStates\Player_IdleState.cs" />
   </ItemGroup>

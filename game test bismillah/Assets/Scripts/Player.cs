@@ -40,8 +40,19 @@ public class Player : Entity
 
     private void TryInteract()
     {
-        Transform closest = null;
+        IInteractable closest = GetClosestInteractable();
+
+        if (closest == null)
+            return;
+
+        closest.Interact();
+    }
+
+    public IInteractable GetClosestInteractable()
+    {
         float closestDistance = Mathf.Infinity;
+        IInteractable closest = null;
+
         Collider2D[] objectsAround = Physics2D.OverlapCircleAll(transform.position, 1f);
 
         foreach (var target in objectsAround)
@@ -54,14 +65,10 @@ public class Player : Entity
             if (distance < closestDistance)
             {
                 closestDistance = distance;
-                closest = target.transform;
+                closest = interactable;
             }
         }
-
-        if (closest == null)
-            return;
-
-        closest.GetComponent<IInteractable>().Interact();
+        return closest;
     }
 
     private void OnEnable()
