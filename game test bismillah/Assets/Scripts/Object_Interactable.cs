@@ -11,8 +11,7 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
     private void Awake()
     {
         promptText = interactToolTip.GetComponentInChildren<TMP_Text>(true);
-
-        Debug.Log(promptText);
+        interactToolTip.SetActive(false);
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
@@ -20,38 +19,23 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
         if (!collision.TryGetComponent(out Player player))
             return;
         this.player = player;
-
-        ShowPrompt();
     }
 
     protected virtual void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out Player player) && this.player == player)
             this.player = null;
-
-        HidePrompt();
     }
 
-    protected void ShowPrompt()
+    public void ShowPrompt()
     {
         if (interactToolTip == null || promptText == null) return;
-
-        if (player == null)
-            return;
-
-        IInteractable closest = player.GetClosestInteractable();
-
-        if (closest != (IInteractable)this)
-        {
-            interactToolTip.SetActive(false);
-            return;
-        }
 
         interactToolTip.SetActive(true);
         RefreshPrompt();
     }
 
-    protected void HidePrompt()
+    public void HidePrompt()
     {
         if (interactToolTip == null) return;
 

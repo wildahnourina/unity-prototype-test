@@ -13,6 +13,8 @@ public class Player : Entity
     public Player_JumpState jumpState { get; private set; }
     public Player_FallState fallState { get; private set; }
 
+    private Object_Interactable lastPrompted;
+
     public Vector2 moveInput { get; private set; }
     [Header("Movement Details")]
     public float moveSpeed;
@@ -36,6 +38,13 @@ public class Player : Entity
     {
         base.Start();
         stateMachine.Initialize(idleState);
+    }
+
+
+    protected override void Update()
+    {
+        base.Update();
+        UpdatePrompt();
     }
 
     private void TryInteract()
@@ -69,6 +78,20 @@ public class Player : Entity
             }
         }
         return closest;
+    }
+
+    private void UpdatePrompt()
+    {
+        IInteractable closest = GetClosestInteractable();
+
+        Object_Interactable current = closest as Object_Interactable;
+
+        if (current == lastPrompted)
+            return;
+
+        lastPrompted?.HidePrompt();
+        lastPrompted = current;
+        lastPrompted?.ShowPrompt();
     }
 
     private void OnEnable()
