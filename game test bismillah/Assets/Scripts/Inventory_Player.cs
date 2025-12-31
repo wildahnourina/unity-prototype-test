@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Inventory_Player : MonoBehaviour
 {
-    public int maxInventorySize = 10;
+    public event Action OnInventoryChange;
+
+    public int maxInventorySize = 5;
     public List<Inventory_Item> itemList = new List<Inventory_Item>();
 
     public Inventory_Item GetItemById(string itemId)
@@ -40,6 +43,8 @@ public class Inventory_Player : MonoBehaviour
             itemInInventory.AddStack();//kalo ada itemnya, masukin ke stack, jadi nambah jumlah item yang sama (tp tetap ada stacksize)
         else
             itemList.Add(itemToAdd);// kalo gak ada, ya masuk ke slot baru
+
+        OnInventoryChange?.Invoke();
     }
 
     public void RemoveOneItem(Inventory_Item itemToRemove)
@@ -50,6 +55,8 @@ public class Inventory_Player : MonoBehaviour
             itemInInventory.RemoveStack();
         else
             itemList.Remove(itemToRemove);
+
+        OnInventoryChange?.Invoke();
     }
 
 }

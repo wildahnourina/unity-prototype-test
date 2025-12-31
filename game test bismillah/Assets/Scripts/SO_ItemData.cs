@@ -17,6 +17,6 @@ public class SO_ItemData : ScriptableObject
 
 public enum ItemType
 {
-    Key,
-    Consumable
+    KeyItem,
+    Consumable,
 }

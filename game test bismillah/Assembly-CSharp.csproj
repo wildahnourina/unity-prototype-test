@@ -61,28 +61,36 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Object_Interactable_Door.cs" />
-    <Compile Include="Assets\Scripts\Object_Interactable.cs" />
-    <Compile Include="Assets\Scripts\Object_ItemPickup.cs" />
+    <Compile Include="Assets\Scripts\State Machine\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Interactable.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_AiredState.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_ItemPickup.cs" />
+    <Compile Include="Assets\Scripts\UI_ItemSlot.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_NPC_Student.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_WalkState.cs" />
+    <Compile Include="Assets\Scripts\State Machine\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Lockable.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_WalkState.cs" />
+    <Compile Include="Assets\Scripts\State Machine\EntityState.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_FallState.cs" />
+    <Compile Include="Assets\Scripts\UI_ItemSlotParent.cs" />
     <Compile Include="Assets\Scripts\Inventory_Item.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_AiredState.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_JumpState.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\StateMachine.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_GroundedState.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Locker.cs" />
+    <Compile Include="Assets\Scripts\UI_Inventory.cs" />
     <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Inventory_Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_FallState.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\EntityState.cs" />
     <Compile Include="Assets\Scripts\SO_ItemData.cs" />
     <Compile Include="Assets\Scripts\SpineAnimator.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_GroundedState.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Environment.cs" />
     <Compile Include="Assets\InputSystem\PlayerInputSet.cs" />
-    <Compile Include="Assets\Scripts\Object_Interactable_Locker.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_RunState.cs" />
-    <Compile Include="Assets\Scripts\PlayerStates\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Door.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_NPC.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_JumpState.cs" />
+    <Compile Include="Assets\Scripts\Player States\Player_RunState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

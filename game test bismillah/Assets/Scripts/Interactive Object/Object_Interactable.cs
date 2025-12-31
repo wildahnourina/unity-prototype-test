@@ -8,7 +8,7 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
     [SerializeField] private GameObject interactToolTip;
     private TMP_Text promptText;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         promptText = interactToolTip.GetComponentInChildren<TMP_Text>(true);
         interactToolTip.SetActive(false);
