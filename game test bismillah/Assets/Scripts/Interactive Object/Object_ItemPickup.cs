@@ -3,9 +3,11 @@ using UnityEngine;
 public class Object_ItemPickup : Object_Interactable
 {
     [SerializeField] private SO_ItemData itemData;
+    [SerializeField] private Vector2 dropForce = new Vector2(3, 10);
 
     [SerializeField] private SpriteRenderer sr;
-    //[SerializeField] private GameObject interactToolTip;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Collider2D col;
 
     private void OnValidate()
     {
@@ -13,30 +15,36 @@ public class Object_ItemPickup : Object_Interactable
             return;
 
         sr = GetComponentInChildren<SpriteRenderer>();
+        SetupVisual();
+    }
+
+    public void SetupItem(SO_ItemData itemData)
+    {
+        this.itemData = itemData;
+        SetupVisual();
+
+        float xDropForce = Random.Range(-dropForce.x, dropForce.x);
+        rb.linearVelocity = new Vector2(xDropForce, dropForce.y);
+        col.isTrigger = false;
+    }
+
+    private void SetupVisual()
+    {
         sr.sprite = itemData.itemIcon;
         gameObject.name = "Object_ItemPickup - " + itemData.itemName;
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (!collision.TryGetComponent(out Player player))
-    //        return;
-    //    this.player = player;
-
-    //    interactToolTip.SetActive(true);
-    //}
-
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.TryGetComponent(out Player player) && this.player == player)
-    //        this.player = null;
-
-    //    interactToolTip.SetActive(false);
-    //}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") && col.isTrigger == false)
+        {
+            col.isTrigger = true;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+    }
 
     public override void Interact()
     {
-        Debug.Log("masuk inventory");
         if (player == null)
             return;
 

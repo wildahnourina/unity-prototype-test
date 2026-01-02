@@ -11,7 +11,6 @@ public class SO_ItemData : ScriptableObject
     public string description;
 
     public ItemType itemType;
-    public bool stackable;
     public int maxStack;
 }
 

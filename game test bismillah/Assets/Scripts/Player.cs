@@ -1,7 +1,5 @@
 using System;
-using System.Collections;
 using UnityEngine;
-using Spine.Unity;
 
 public class Player : Entity
 {

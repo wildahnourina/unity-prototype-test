@@ -9,7 +9,40 @@ public class Inventory_Player : MonoBehaviour
     public int maxInventorySize = 5;
     public List<Inventory_Item> itemList = new List<Inventory_Item>();
 
-    public Inventory_Item GetItemById(string itemId)
+    [Header("ITEM DROP")]
+    [SerializeField] private GameObject itemDropPrefab;
+
+    public void DropItem(Inventory_Item itemToDrop)
+    {
+        if (itemToDrop == null)
+            return;
+
+
+        if (!itemList.Contains(itemToDrop))
+            return;
+
+        RemoveOneItem(itemToDrop);
+        CreateItemDrop(itemToDrop.itemData);
+    }
+
+    public void CreateItemDrop(SO_ItemData itemToDrop)
+    {
+        if (itemToDrop == null)
+            return;
+
+        Vector3 dropPos = transform.position + transform.forward;
+
+        GameObject newItem = Instantiate(itemDropPrefab, dropPos, Quaternion.identity);
+        newItem.GetComponent<Object_ItemPickup>().SetupItem(itemToDrop);
+    }
+
+    public void TryUseItem(Inventory_Item itemToUse)
+    {
+        Debug.Log("use item " + itemToUse.itemData.itemName);
+        RemoveOneItem(itemToUse);
+    }
+
+        public Inventory_Item GetItemById(string itemId)
     {
         if (itemList == null) return null;
 

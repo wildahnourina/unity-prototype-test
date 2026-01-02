@@ -14,17 +14,28 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler
     [SerializeField] protected Image itemIcon;
     [SerializeField] protected TextMeshProUGUI itemStackSize;
 
-    protected virtual void Awake()
+    protected void Awake()
     {
         inventory = FindAnyObjectByType<Inventory_Player>();
     }
 
-    public virtual void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
-        if (itemInSlot == null || itemInSlot.itemData.itemType == ItemType.KeyItem)
+        if (itemInSlot == null)
             return;
-        
-        inventory.RemoveOneItem(itemInSlot);
+
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            if (itemInSlot.itemData.itemType == ItemType.Consumable)
+            {
+                inventory.TryUseItem(itemInSlot);
+            }
+        }
+
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            inventory.DropItem(itemInSlot);
+        }
     }
 
     public void UpdateSlot(Inventory_Item item)

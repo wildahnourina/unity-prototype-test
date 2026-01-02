@@ -14,14 +14,14 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
         interactToolTip.SetActive(false);
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerStay2D(Collider2D collision)
     {
         if (!collision.TryGetComponent(out Player player))
             return;
         this.player = player;
     }
 
-    protected virtual void OnTriggerExit2D(Collider2D collision)
+    protected void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out Player player) && this.player == player)
             this.player = null;
