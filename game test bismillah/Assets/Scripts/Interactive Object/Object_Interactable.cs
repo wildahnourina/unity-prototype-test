@@ -3,6 +3,7 @@ using TMPro;
 
 public abstract class Object_Interactable : MonoBehaviour, IInteractable
 {
+    protected UI ui;
     protected Player player;
 
     [SerializeField] private GameObject interactToolTip;
@@ -10,6 +11,7 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
 
     protected virtual void Awake()
     {
+        ui = FindFirstObjectByType<UI>();
         promptText = interactToolTip.GetComponentInChildren<TMP_Text>(true);
         interactToolTip.SetActive(false);
     }

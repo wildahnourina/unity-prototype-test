@@ -66,13 +66,14 @@
     <Compile Include="Assets\Scripts\Player States\Player_AiredState.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_ItemPickup.cs" />
     <Compile Include="Assets\Scripts\UI_ItemSlot.cs" />
-    <Compile Include="Assets\Scripts\Interactive Object\Object_NPC_Student.cs" />
     <Compile Include="Assets\Scripts\Player States\Player_WalkState.cs" />
+    <Compile Include="Assets\Scripts\UI_Dialogue.cs" />
     <Compile Include="Assets\Scripts\State Machine\StateMachine.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Lockable.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
     <Compile Include="Assets\Scripts\State Machine\EntityState.cs" />
     <Compile Include="Assets\Scripts\Player States\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Scripts\Player States\Player_FallState.cs" />
     <Compile Include="Assets\Scripts\UI_ItemSlotParent.cs" />
     <Compile Include="Assets\Scripts\Inventory_Item.cs" />
@@ -88,6 +89,8 @@
     <Compile Include="Assets\InputSystem\PlayerInputSet.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Door.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_NPC.cs" />
+    <Compile Include="Assets\Scripts\SO_DialogueSequence.cs" />
+    <Compile Include="Assets\Scripts\SO_DialogueSpeaker.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\Scripts\Player States\Player_JumpState.cs" />
     <Compile Include="Assets\Scripts\Player States\Player_RunState.cs" />

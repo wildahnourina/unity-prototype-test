@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Object_NPC : Object_Interactable
 {
+    [Header("Dialogue")]
+    [SerializeField] private SO_DialogueSequence firstDialogueLine;
+
     [SerializeField] private Transform npc;
     private bool facingRight = true;
 
@@ -43,7 +46,7 @@ public class Object_NPC : Object_Interactable
 
     public override void Interact()
     {
-        
+        ui.OpenDialogueUI(firstDialogueLine);
     }
 
     protected override string GetPromptText()

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 264c171ee0033b144b626d843cb58eae, type: 3}
-  m_Name: Key
+  m_Name: Item - Key Door 1
   m_EditorClassIdentifier: 
   itemId: door1
   itemName: Key Door 1

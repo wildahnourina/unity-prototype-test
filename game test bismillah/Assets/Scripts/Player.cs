@@ -4,6 +4,7 @@ using UnityEngine;
 public class Player : Entity
 {
     public PlayerInputSet input { get; private set; }
+    public UI ui { get; private set; }
 
     public Player_IdleState idleState { get; private set; }
     public Player_WalkState walkState { get; private set; }
@@ -24,6 +25,9 @@ public class Player : Entity
     {
         base.Awake();
         input = new PlayerInputSet();
+        ui = FindAnyObjectByType<UI>();
+
+        ui.SetupControlsUI(input);
 
         idleState = new Player_IdleState(this, stateMachine, anim, "idle");
         walkState = new Player_WalkState(this, stateMachine, anim, "walk");
