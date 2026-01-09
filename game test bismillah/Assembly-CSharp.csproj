@@ -1404,10 +1404,6 @@
       <Project>{F242F0D1-75E4-2DC9-7669-FADEEB1A51BA}</Project>
       <Name>spine-unity</Name>
     </ProjectReference>
-    <ProjectReference Include="spine-csharp.csproj">
-      <Project>{22E264D0-44E4-F985-DC88-E618149A7BF6}</Project>
-      <Name>spine-csharp</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{58F456D4-F1E7-D507-BE3F-4B5374E93554}</Project>
       <Name>spine-unity-editor</Name>

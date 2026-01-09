@@ -20,6 +20,7 @@ public class Object_NPC : Object_Interactable
     private void Start()
     {
         skeleton.AnimationState.SetAnimation(0, "idle", true);
+        skeleton.AnimationState.SetAnimation(1, "aim", true);
     }
 
     private void Update()

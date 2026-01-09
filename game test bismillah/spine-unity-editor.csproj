@@ -70,6 +70,7 @@
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBaker.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SkeletonDataAssetInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineHandles.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonAnimationInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
@@ -104,8 +105,6 @@
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\AssetUtility.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineInspectorUtility.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SpinePreferences.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineBuildProcessor.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonSubmeshGraphicInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\Editor\spine-unity-editor.asmdef" />
@@ -1174,10 +1173,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="spine-csharp.csproj">
-      <Project>{22E264D0-44E4-F985-DC88-E618149A7BF6}</Project>
-      <Name>spine-csharp</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{F242F0D1-75E4-2DC9-7669-FADEEB1A51BA}</Project>
       <Name>spine-unity</Name>
