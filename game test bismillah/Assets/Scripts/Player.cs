@@ -5,13 +5,13 @@ public class Player : Entity
 {
     public PlayerInputSet input { get; private set; }
     public UI ui { get; private set; }
-
     public Player_IdleState idleState { get; private set; }
     public Player_WalkState walkState { get; private set; }
     public Player_RunState runState { get; private set; }
     public Player_JumpState jumpState { get; private set; }
     public Player_FallState fallState { get; private set; }
 
+    public FlashlightController flashlight { get; private set; }
     private Object_Interactable lastPrompted;
 
     public Vector2 moveInput { get; private set; }
@@ -26,6 +26,7 @@ public class Player : Entity
         base.Awake();
         input = new PlayerInputSet();
         ui = FindAnyObjectByType<UI>();
+        flashlight = GetComponentInChildren<FlashlightController>();
 
         ui.SetupControlsUI(input);
 
@@ -104,6 +105,7 @@ public class Player : Entity
         input.Player.Movement.canceled += ctx => moveInput = Vector2.zero;
 
         input.Player.Interact.performed += ctx => TryInteract();
+        input.Player.Flashlight.performed += ctx => flashlight.Toggle();
     }
 
     private void OnDisable()

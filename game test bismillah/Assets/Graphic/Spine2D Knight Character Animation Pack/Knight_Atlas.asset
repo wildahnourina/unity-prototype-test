@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 269b99543ee97a248a759d33550005be, type: 3}
-  m_Name: Speaker - Student Sarah
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Knight_Atlas
   m_EditorClassIdentifier: 
-  speakerName: Sarah
-  speakerPortrait: {fileID: 25217575, guid: 678974b0462887e43b6859046a7015b8, type: 3}
+  atlasFile: {fileID: 4900000, guid: 381637edb8aff56409d46ab2b02eac13, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 819c6996fedcfd541a94c40a9d4f9bc4, type: 2}

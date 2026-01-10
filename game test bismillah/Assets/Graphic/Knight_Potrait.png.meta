@@ -1,88 +1,7 @@
 fileFormatVersion: 2
-guid: 16f8a0a7c8ef62048b2450ca743bfe75
+guid: 678974b0462887e43b6859046a7015b8
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: eye_indifferent
-  - first:
-      213: 21300002
-    second: eye_surprised
-  - first:
-      213: 21300004
-    second: front_bracer
-  - first:
-      213: 21300006
-    second: front_fist_closed
-  - first:
-      213: 21300008
-    second: front_fist_open
-  - first:
-      213: 21300010
-    second: front_foot
-  - first:
-      213: 21300012
-    second: front_foot_bend1
-  - first:
-      213: 21300014
-    second: front_foot_bend2
-  - first:
-      213: 21300016
-    second: front_shin
-  - first:
-      213: 21300018
-    second: front_thigh
-  - first:
-      213: 21300020
-    second: front_upper_arm
-  - first:
-      213: 21300022
-    second: goggles
-  - first:
-      213: 21300024
-    second: gun
-  - first:
-      213: 21300026
-    second: head
-  - first:
-      213: 21300028
-    second: mouth_grind
-  - first:
-      213: 21300030
-    second: mouth_oooo
-  - first:
-      213: 21300032
-    second: mouth_smile
-  - first:
-      213: 21300034
-    second: muzzle
-  - first:
-      213: 21300036
-    second: neck
-  - first:
-      213: 21300038
-    second: rear_bracer
-  - first:
-      213: 21300040
-    second: rear_foot
-  - first:
-      213: 21300042
-    second: rear_foot_bend1
-  - first:
-      213: 21300044
-    second: rear_foot_bend2
-  - first:
-      213: 21300046
-    second: rear_shin
-  - first:
-      213: 21300048
-    second: rear_thigh
-  - first:
-      213: 21300050
-    second: rear_upper_arm
-  - first:
-      213: 21300052
-    second: torso
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -111,12 +30,12 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 16
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -144,7 +63,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
@@ -166,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -179,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -192,35 +111,35 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: head
+      name: Knight 1_17
       rect:
         serializedVersion: 2
-        x: 2
-        y: 402
-        width: 271
-        height: 298
+        x: 917
+        y: 675
+        width: 217
+        height: 211
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
+      spriteID: c224fe50e9435794ea22b37a3a2dcc74
+      internalID: 25217575
       vertices: []
       indices: 
       edges: []
@@ -229,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c7352b2b9d493cf44906f332baf649ed
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -239,34 +158,64 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      eye_indifferent: 21300000
-      eye_surprised: 21300002
-      front_bracer: 21300004
-      front_fist_closed: 21300006
-      front_fist_open: 21300008
-      front_foot: 21300010
-      front_foot_bend1: 21300012
-      front_foot_bend2: 21300014
-      front_shin: 21300016
-      front_thigh: 21300018
-      front_upper_arm: 21300020
-      goggles: 21300022
-      gun: 21300024
-      head: 21300026
-      mouth_grind: 21300028
-      mouth_oooo: 21300030
-      mouth_smile: 21300032
-      muzzle: 21300034
-      neck: 21300036
-      rear_bracer: 21300038
-      rear_foot: 21300040
-      rear_foot_bend1: 21300042
-      rear_foot_bend2: 21300044
-      rear_shin: 21300046
-      rear_thigh: 21300048
-      rear_upper_arm: 21300050
-      spineboy 1_0: -28828211
-      torso: 21300052
+      Knight 1_0: -378867587
+      Knight 1_1: -625181686
+      Knight 1_10: -889239774
+      Knight 1_11: -1881237700
+      Knight 1_12: 1525667740
+      Knight 1_13: 1334392162
+      Knight 1_14: -1959452932
+      Knight 1_15: -1674707521
+      Knight 1_16: -292145470
+      Knight 1_17: 25217575
+      Knight 1_18: 1190755069
+      Knight 1_19: 773168940
+      Knight 1_2: 1758866648
+      Knight 1_20: -1674745694
+      Knight 1_21: -125515399
+      Knight 1_22: 1184811296
+      Knight 1_23: 552811503
+      Knight 1_24: -2115962586
+      Knight 1_25: -1803959067
+      Knight 1_26: -1690045322
+      Knight 1_27: 829158804
+      Knight 1_28: -1321834733
+      Knight 1_29: -1920367088
+      Knight 1_3: 1788730878
+      Knight 1_30: -2063301119
+      Knight 1_31: 922951541
+      Knight 1_32: -1687107828
+      Knight 1_33: -82640368
+      Knight 1_34: 1664314691
+      Knight 1_35: 1257944228
+      Knight 1_36: 1660944432
+      Knight 1_37: -845698471
+      Knight 1_38: 791797709
+      Knight 1_39: -280896507
+      Knight 1_4: -1702486309
+      Knight 1_40: 1123663709
+      Knight 1_41: 643173617
+      Knight 1_42: 411754471
+      Knight 1_43: -721482638
+      Knight 1_44: -1542898216
+      Knight 1_45: -1774403501
+      Knight 1_46: -207432677
+      Knight 1_47: 1908076130
+      Knight 1_48: -1546963335
+      Knight 1_49: 1428970515
+      Knight 1_5: -2144547486
+      Knight 1_50: 1230665429
+      Knight 1_51: 526035752
+      Knight 1_52: 989480486
+      Knight 1_53: 263824276
+      Knight 1_54: 44886507
+      Knight 1_55: 2041357949
+      Knight 1_56: -402882812
+      Knight 1_57: 2009337499
+      Knight 1_6: -611191389
+      Knight 1_7: 1678120537
+      Knight 1_8: 123337589
+      Knight 1_9: 1229624768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
