@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory_Player : MonoBehaviour
 {
+    protected Player player;
     public event Action OnInventoryChange;
 
     public int maxInventorySize = 5;
@@ -11,6 +12,11 @@ public class Inventory_Player : MonoBehaviour
 
     [Header("ITEM DROP")]
     [SerializeField] private GameObject itemDropPrefab;
+
+    private void Awake()
+    {
+        player = GetComponent<Player>();
+    }
 
     public void DropItem(Inventory_Item itemToDrop)
     {
@@ -36,13 +42,29 @@ public class Inventory_Player : MonoBehaviour
         newItem.GetComponent<Object_ItemPickup>().SetupItem(itemToDrop);
     }
 
-    public void TryUseItem(Inventory_Item itemToUse)
+    public void UseItem(Inventory_Item itemToUse)
     {
-        Debug.Log("use item " + itemToUse.itemData.itemName);
-        RemoveOneItem(itemToUse);
+        Inventory_Item consumable = itemList.Find(item => item == itemToUse);
+
+        if (consumable == null)
+            return;
+
+        if (consumable.itemData.itemType != ItemType.Consumable)
+            return;
+
+        bool used = consumable.itemData.itemEffect.TryExecuteEffect(player);
+        if (!used)
+            return;
+
+        if (consumable.stackSize > 1)
+            consumable.RemoveStack();
+        else
+            RemoveOneItem(consumable);
+
+        OnInventoryChange?.Invoke();
     }
 
-        public Inventory_Item GetItemById(string itemId)
+    public Inventory_Item GetItemById(string itemId)
     {
         if (itemList == null) return null;
 

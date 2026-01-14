@@ -12,10 +12,37 @@ public class SO_ItemData : ScriptableObject
 
     public ItemType itemType;
     public int maxStack;
+
+    public ItemEffect itemEffect;
 }
 
 public enum ItemType
 {
     KeyItem,
     Consumable,
+    Equipment
+}
+
+public enum ConsumableType
+{
+    None,
+    Battery
+}
+
+[System.Serializable]
+public class ItemEffect
+{
+    public ConsumableType consumableType = ConsumableType.None;
+    public float effectValue;
+
+    public bool TryExecuteEffect(Player player)
+    {
+        switch (consumableType)
+        {
+            case ConsumableType.Battery:
+                return player.flashlight.TryIncreaseBattery(effectValue);
+        }
+
+        return false;
+    }
 }

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 264c171ee0033b144b626d843cb58eae, type: 3}
-  m_Name: Item - Key Door 1
+  m_Name: Item - Flashlight
   m_EditorClassIdentifier: 
-  itemId: door1
-  itemName: Key Door 1
-  itemIcon: {fileID: 21300000, guid: 2412d1d8498463f49ae6ebe3a66ffae9, type: 3}
+  itemId: flashlight
+  itemName: Flashlight
+  itemIcon: {fileID: 21300000, guid: 02c4cbcce432ae74bb2d965060e64d29, type: 3}
   description: 
-  itemType: 0
+  itemType: 2
   maxStack: 0
   consumableType: 0
   effectValue: 0
