@@ -2,24 +2,31 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Random = UnityEngine.Random;
 
 public class FlashlightController : MonoBehaviour
 {
     public event Action<float> OnBatteryChanged;
     public event Action<bool> OnHasFlashlight;
 
+    [SerializeField] private string itemId = "flashlight";
     [SerializeField] private Light2D spotlight;
     [SerializeField] private float maxBattery = 100f;
     [SerializeField] private float drainPerSecond = 5f;
-    [SerializeField] private string itemId = "flashlight";
+    [SerializeField] private float lowBatteryPower = 20f;
 
     private float currentBattery;
     private bool isOn;
+    private float normalIntensity;
+    private bool isLowBattery;
+
     private Coroutine drainCo;
+    private Coroutine flickerCo;
     private Inventory_Player inventory;
 
     private void Awake()
     {
+        normalIntensity = spotlight.intensity;
         currentBattery = maxBattery;
         spotlight.enabled = false;
 
@@ -37,8 +44,9 @@ public class FlashlightController : MonoBehaviour
     private void OnEnable() => OnHasFlashlight?.Invoke(true);
     private void OnDisable() => OnHasFlashlight?.Invoke(false);
 
-    public float BatteryPercent => currentBattery / maxBattery;
-
+    public float BatteryPercent => currentBattery / maxBattery; 
+    //di sini BatteryPercent menggunakan nilai 0-1, gak di kali 100f karena buat ngasih nilai ke slider battery di UI
+    
     private void UpdateActiveStatus()
     {
         bool hasFlashlight = inventory.GetItemById(itemId) != null;
@@ -80,7 +88,10 @@ public class FlashlightController : MonoBehaviour
         if (drainCo != null)
             StopCoroutine(drainCo);
 
-        drainCo = StartCoroutine(DrainBattery());
+        drainCo = StartCoroutine(DrainBatteryCo());
+
+        if (currentBattery <= lowBatteryPower)
+            StartFlicker();
     }
 
     private void TurnOff()
@@ -93,24 +104,79 @@ public class FlashlightController : MonoBehaviour
             StopCoroutine(drainCo);
             drainCo = null;
         }
+
+        StopFlicker();
     }
 
-    private IEnumerator DrainBattery()
+    private IEnumerator DrainBatteryCo()
     {
         while (currentBattery > 0f)
         {
             currentBattery -= drainPerSecond * Time.deltaTime;
+            currentBattery = Mathf.Max(currentBattery, 0f);
+
             OnBatteryChanged?.Invoke(BatteryPercent);
+
+            if (currentBattery <= lowBatteryPower && !isLowBattery) //pake isLowBattery disini biar StartFlicker() dipanggil sekali
+            {
+                isLowBattery = true;
+                StartFlicker();          // infinite flicker (low battery)
+            }
+            else if (currentBattery > lowBatteryPower && isLowBattery)
+            {
+                isLowBattery = false;
+                StopFlicker();
+            }
 
             if (currentBattery <= 0f)
             {
-                currentBattery = 0f;
-                OnBatteryChanged?.Invoke(0f);
+                StopFlicker();
                 TurnOff();
                 yield break;
             }
 
             yield return null;
+        }
+    }
+
+    public void TriggerFlicker(float duration) => StartFlicker(duration);
+
+    private void StartFlicker(float duration = -1f)
+    {
+        if (!isOn) return;
+
+        if (flickerCo != null)
+            StopCoroutine(flickerCo);
+
+        flickerCo = StartCoroutine(FlickerCo(duration));
+    }
+
+    private void StopFlicker()
+    {
+        if (flickerCo != null)
+            StopCoroutine(flickerCo);
+
+        flickerCo = null;
+        spotlight.intensity = normalIntensity;
+    }
+
+    private IEnumerator FlickerCo(float duration)
+    {
+        float timer = 0f;
+
+        while (duration < 0f || timer < duration)
+        {
+            spotlight.enabled = Random.value > 0.5f;
+            spotlight.intensity = normalIntensity * Random.Range(0.25f, 0.6f);
+
+            yield return new WaitForSeconds(Random.Range(0.05f, 0.15f));
+
+            spotlight.enabled = true;
+            spotlight.intensity = normalIntensity;
+
+            float wait = Random.Range(0.5f, 2.5f);
+            timer += wait;
+            yield return new WaitForSeconds(wait);
         }
     }
 }

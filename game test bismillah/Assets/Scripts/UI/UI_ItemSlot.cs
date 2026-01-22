@@ -26,10 +26,13 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler
 
         if (eventData.button == PointerEventData.InputButton.Left)
         {
+            if (itemInSlot.itemData.itemType == ItemType.KeyItem)
+                return;
+
             if (itemInSlot.itemData.itemType == ItemType.Consumable)
-            {
                 inventory.UseItem(itemInSlot);
-            }
+            else
+                inventory.EquipItem(itemInSlot);
         }
 
         if (eventData.button == PointerEventData.InputButton.Right)

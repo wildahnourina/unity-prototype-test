@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using static Spine.Unity.Examples.EquipSystemExample;
 
 public class Inventory_Player : MonoBehaviour
 {
@@ -62,6 +63,19 @@ public class Inventory_Player : MonoBehaviour
             RemoveOneItem(consumable);
 
         OnInventoryChange?.Invoke();
+    }
+
+    public void EquipItem(Inventory_Item itemToEquip)
+    {
+        if (itemToEquip.itemData.itemType != ItemType.Equipable)
+            return;
+
+        switch (itemToEquip.itemData.equipmentItem)
+        {
+            case EquipmentItem.Flashlight:
+                player.flashlight.Toggle();
+                break;
+        }
     }
 
     public Inventory_Item GetItemById(string itemId)

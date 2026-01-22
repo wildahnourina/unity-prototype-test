@@ -18,5 +18,7 @@ MonoBehaviour:
   description: 
   itemType: 2
   maxStack: 0
-  consumableType: 0
-  effectValue: 0
+  itemEffect:
+    consumableType: 0
+    effectValue: 0
+  equipmentItem: 1
