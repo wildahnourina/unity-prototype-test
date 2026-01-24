@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52917f9e9a7cdb4b90f73d42ce8f362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 10
+  reactTo: 0
   flickerDuration: 1.2
 --- !u!1 &613635273
 GameObject:
@@ -7773,6 +7773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968139333684908238}
   - component: {fileID: 8054782439276385447}
+  - component: {fileID: 8054782439276385448}
   - component: {fileID: 2504899263614753238}
   m_Layer: 9
   m_Name: Object_ItemPickup - Key Door 1
@@ -7941,6 +7942,19 @@ MonoBehaviour:
   sr: {fileID: 8462698764575819150}
   rb: {fileID: 0}
   col: {fileID: 0}
+--- !u!114 &8054782439276385448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530960778148789434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fe13da6cc347a44b972bfd991c75b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
 --- !u!4 &8136933246946828144
 Transform:
   m_ObjectHideFlags: 0

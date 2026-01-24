@@ -58,6 +58,8 @@ public class Object_ItemPickup : Object_Interactable
         if (inventory.CanAddItem(itemToAdd))
         {
             inventory.AddItem(itemToAdd);
+
+            EmitTrigger();
             Destroy(gameObject);
         }
     }

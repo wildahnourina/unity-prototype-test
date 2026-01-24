@@ -2,11 +2,22 @@ using UnityEngine;
 
 public abstract class Anomaly : MonoBehaviour
 {
-    protected bool triggered;
+    [SerializeField] protected TriggerType reactTo;
+    protected virtual void OnEnable()
+    {
+        AnomalyTriggerSignals.OnTrigger += HandleTrigger;
+    }
 
-    protected virtual void OnEnable() => Subscribe();
-    protected virtual void OnDisable() => Unsubscribe();
+    protected virtual void OnDisable()
+    {
+        AnomalyTriggerSignals.OnTrigger -= HandleTrigger;
+    }
 
-    protected abstract void Subscribe();
-    protected abstract void Unsubscribe();
+    private void HandleTrigger(AnomalyTriggerContext ctx)
+    {
+        if (ctx.type != reactTo) return;
+        OnTriggered(ctx);
+    }
+
+    protected abstract void OnTriggered(AnomalyTriggerContext ctx);
 }
