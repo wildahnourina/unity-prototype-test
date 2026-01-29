@@ -15,5 +15,6 @@ public struct AnomalyTriggerContext
 public enum TriggerType
 {
     ItemPickup,
-    LightOn
+    RoomLightOn,
+    FlashlightNear
 }

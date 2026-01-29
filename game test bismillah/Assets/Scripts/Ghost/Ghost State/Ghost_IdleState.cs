@@ -6,11 +6,20 @@ public class Ghost_IdleState : GhostState
     {
     }
 
+    //public override void Enter()
+    //{
+    //    base.Enter();
+
+    //    //ghost.ClearTrigger();
+    //}
+
     public override void Update()
     {
         base.Update();
 
-        // if ghost.isTriggered
-        //changeState ke activeState
+        if (ghost.isTriggered && ghost.PlayerDetected())
+        {
+            stateMachine.ChangeState(ghost.activeState);
+        }
     }
 }

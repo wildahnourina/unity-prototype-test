@@ -9,11 +9,18 @@ public class FlashlightController : MonoBehaviour
     public event Action<float> OnBatteryChanged;
     public event Action<bool> OnHasFlashlight;
 
+    [Header("Flashlight Setting")]
     [SerializeField] private string itemId = "flashlight";
     [SerializeField] private Light2D spotlight;
     [SerializeField] private float maxBattery = 100f;
     [SerializeField] private float drainPerSecond = 5f;
     [SerializeField] private float lowBatteryPower = 20f;
+
+    [Header("Trigger Emitter")]
+    [SerializeField] private LayerMask ghostMask;
+    [SerializeField] private Transform targetCheck;
+    [SerializeField] private float targetCheckRadius;
+    private AnomalyTriggerEmitter emitter;
 
     private float currentBattery;
     private bool isOn;
@@ -26,6 +33,8 @@ public class FlashlightController : MonoBehaviour
 
     private void Awake()
     {
+        TryGetComponent(out emitter);
+
         normalIntensity = spotlight.intensity;
         currentBattery = maxBattery;
         spotlight.enabled = false;
@@ -39,6 +48,13 @@ public class FlashlightController : MonoBehaviour
         inventory.OnInventoryChange += UpdateActiveStatus;
 
         UpdateActiveStatus();
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!isOn) return;
+
+        CheckGhostInLight();
     }
 
     private void OnEnable() => OnHasFlashlight?.Invoke(true);
@@ -70,6 +86,18 @@ public class FlashlightController : MonoBehaviour
 
         OnBatteryChanged?.Invoke(currentBattery / maxBattery);
         return true;
+    }
+
+    private void CheckGhostInLight()
+    {
+        if (!isOn) return;
+        var targets = Physics2D.OverlapCircleAll(targetCheck.position, targetCheckRadius, ghostMask);
+
+        foreach (var target in targets)
+        {
+            if (target.GetComponent<Ghost>() == null) return;
+            emitter?.TriggerEmit();
+        }
     }
 
     public void Toggle()
@@ -116,6 +144,8 @@ public class FlashlightController : MonoBehaviour
             currentBattery = Mathf.Max(currentBattery, 0f);
 
             OnBatteryChanged?.Invoke(BatteryPercent);
+
+            if (isOn) CheckGhostInLight();
 
             if (currentBattery <= lowBatteryPower && !isLowBattery) //pake isLowBattery disini biar StartFlicker() dipanggil sekali
             {
@@ -178,5 +208,10 @@ public class FlashlightController : MonoBehaviour
             timer += wait;
             yield return new WaitForSeconds(wait);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(targetCheck.position, targetCheckRadius);
     }
 }

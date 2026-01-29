@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Player : Entity
@@ -11,6 +12,8 @@ public class Player : Entity
     public Player_RunState runState { get; private set; }
     public Player_JumpState jumpState { get; private set; }
     public Player_FallState fallState { get; private set; }
+    public Player_CaughtState caughtState { get; private set; }
+    public Player_RespawnState respawnState { get; private set; }
 
     public FlashlightController flashlight { get; private set; }
     private Object_Interactable lastPrompted;
@@ -36,6 +39,8 @@ public class Player : Entity
         runState = new Player_RunState(this, stateMachine, anim, "run");
         jumpState = new Player_JumpState(this, stateMachine, anim, "jump");
         fallState = new Player_FallState(this, stateMachine, anim, "fall");
+        caughtState = new Player_CaughtState(this, stateMachine, anim, "morningstar pose");
+        respawnState = new Player_RespawnState(this, stateMachine, anim, "crouch");
     }
 
     protected override void Start()
@@ -50,6 +55,7 @@ public class Player : Entity
         base.Update();
         UpdatePrompt();
     }
+
 
     private void TryInteract()
     {
@@ -98,6 +104,34 @@ public class Player : Entity
         lastPrompted?.ShowPrompt();
     }
 
+    public void OnCaught() => stateMachine.ChangeState(caughtState);
+
+    //public void StartRespawn(float delay, Action onRespawn)
+    //{
+    //    StartCoroutine(RespawnRoutine(delay, onRespawn));
+    //}
+
+    //private IEnumerator RespawnRoutine(float delay, Action onRespawn)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    Respawn();
+    //    onRespawn?.Invoke(); // ganti state
+    //}
+    //private void Respawn()
+    //{
+    //    transform.position = spawnPoint.position;
+    //    StopPlayerControls(true);
+    //}
+
+
+    public void StopPlayerControls(bool stopControls)
+    {
+        if (stopControls)
+            input.Player.Disable();
+        else
+            input.Player.Enable();
+    }
+
     private void OnEnable()
     {
         input.Enable();
@@ -117,4 +151,5 @@ public class Player : Entity
     {
         input.Disable();
     }
+
 }

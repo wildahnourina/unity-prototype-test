@@ -23,6 +23,6 @@ public class Object_Interactable_Switch : Object_Interactable
 
     protected override string GetPromptText()
     {
-        return lightGroup.IsOn ? "(E) Switch OFF" : "(E) Switch ON";
+        return isOn ? "(E) Switch OFF" : "(E) Switch ON";
     }
 }

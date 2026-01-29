@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Player_FallState.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_ItemPickup.cs" />
     <Compile Include="Assets\Scripts\Anomaly\Anomaly_LightFlicker.cs" />
+    <Compile Include="Assets\Scripts\Player\Player States\Player_RespawnState.cs" />
     <Compile Include="Assets\Scripts\State Machine\GhostState.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_ChaseState.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_CaughtState.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\UI\UI_InGame.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Locker.cs" />
     <Compile Include="Assets\Scripts\Anomaly\AnomalyTriggerSignals.cs" />
+    <Compile Include="Assets\Scripts\Ghost\Ghost_CriyngWoman.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSequence.cs" />
     <Compile Include="Assets\Scripts\Anomaly\AnomalyTriggerEmitter.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSpeaker.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Player_WalkState.cs" />
     <Compile Include="Assets\Scripts\UI\UI.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\Player\Player States\Player_CaughtState.cs" />
     <Compile Include="Assets\Scripts\Anomaly\Anomaly.cs" />
     <Compile Include="Assets\Scripts\Inventory System\Inventory_Player.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_GroundedState.cs" />

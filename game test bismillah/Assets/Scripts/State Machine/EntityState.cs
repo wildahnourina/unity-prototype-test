@@ -10,6 +10,9 @@ public abstract class EntityState
     protected string animName;
     protected SpineAnimator anim;
     protected bool loopAnim = true;
+    protected TrackEntry entry;
+
+    public EntityState NextState => null;
 
     public EntityState(StateMachine stateMachine, SpineAnimator anim, string animName)
     {
@@ -20,12 +23,12 @@ public abstract class EntityState
 
     public virtual void Enter()
     {
-        anim.Play(animName, loopAnim);
+        entry = anim.Play(animName, loopAnim);
     }
 
     public virtual void Update() { }
     public virtual void Exit()
     {
-
+        entry = null;
     }
 }

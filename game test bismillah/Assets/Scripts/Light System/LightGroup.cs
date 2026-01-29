@@ -1,3 +1,4 @@
+using Spine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,24 +10,34 @@ public class LightGroup : MonoBehaviour
     public List<Light2D> lights;
 
     private Coroutine flickerCo;
-
     private bool switchOn;
     public bool IsOn => switchOn;
 
+    private AnomalyTriggerEmitter emitter;
+    private Coroutine emitCo;
+
     private void Awake()
     {
+        TryGetComponent(out emitter);
+
         switchOn = startOn;
         SetLights();
     }
+
+    //private void Update()
+    //{
+    //    if (switchOn) emitter?.TriggerEmit();
+    //}
 
     public void Toggle()
     {
         switchOn = !switchOn;
 
-        if (!switchOn)        
+        if (!switchOn)
             StopFlicker();
 
         SetLights();
+        HandleEmit();
     }
 
     // FLICKER (EVENT)
@@ -67,10 +78,54 @@ public class LightGroup : MonoBehaviour
         flickerCo = null;
     }
 
-    void SetLights()
+    private void HandleEmit()
+    {
+        if (switchOn)
+        {
+            if (emitCo == null)
+                emitCo = StartCoroutine(EmitCo());
+        }
+        else
+        {
+            if (emitCo != null)
+            {
+                StopCoroutine(emitCo);
+                emitCo = null;
+            }
+        }
+    }
+
+    private IEnumerator EmitCo()
+    {
+        while (switchOn)
+        {
+            emitter?.TriggerEmit();
+            yield return null;
+        }
+    }
+
+    private void SetLights()
     {
         foreach (var light in lights)
             if (light != null)
                 light.enabled = switchOn;
     }
+
+    //private void SetLights(bool value)
+    //{
+    //    if (switchOn == value) return;
+
+    //    switchOn = value;
+
+    //    if (!switchOn) StopFlicker();
+
+    //    ApplyLightVisual();
+    //}
+
+    //private void ApplyLightVisual()
+    //{
+    //    foreach (var light in lights)
+    //        if (light != null)
+    //            light.enabled = switchOn;
+    //}
 }

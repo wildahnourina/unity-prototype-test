@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Anomaly : MonoBehaviour
 {
-    [SerializeField] protected TriggerType reactTo;
+    public TriggerType reactTo;
     protected virtual void OnEnable()
     {
         AnomalyTriggerSignals.OnTrigger += HandleTrigger;
