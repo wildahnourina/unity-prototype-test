@@ -3,9 +3,11 @@ using System.Collections;
 
 public class Ghost : Entity
 {
-    [Header("Chase Details")]
-    public float chaseSpeed = 1.4f;
+    [Header("State Details")]
+    public float chaseSpeed = 1.7f;
     public float caughtDistance;
+    public float walkSpeed = 1f;
+    public Vector2 idlePosition { get; private set; }
 
     [Header("Player Detection")]
     [SerializeField] private LayerMask whatIsPlayer;
@@ -17,13 +19,13 @@ public class Ghost : Entity
     public Ghost_ActiveState activeState;
     public Ghost_ChaseState chaseState;
     public Ghost_CaughtState caughtState;
+    public Ghost_WalkBackState walkBackState;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool isTriggered;
-    //public bool canActive;
-    //public bool hasEverActive = false;//sudah pernah active
 
     public float GetChaseMoveSpeed() => chaseSpeed;
+    public float GetWalkMoveSpeed() => walkSpeed;
 
 
     protected override void Start()
@@ -31,6 +33,8 @@ public class Ghost : Entity
         base.Start();
         stateMachine.Initialize(idleState);
     }
+
+    public void SetIdlePosition(Vector2 pos) => idlePosition = pos;
 
     public void Trigger()
     {
@@ -40,25 +44,12 @@ public class Ghost : Entity
         if (isTriggered) return;
 
         isTriggered = true;
-
-        //if (!hasEverActive)//ketika trigger pertama kali
-        //    canActive = true;
     }
 
     public void ClearTrigger() => isTriggered = false;
 
     public Transform GetPlayerReference()
     {
-        //if (player != null)
-        //    return player;
-
-        //RaycastHit2D hit = PlayerDetected();
-
-        //if (!hit)
-        //    return null;
-
-        //player = hit.transform;
-
         if (player == null)
             player = PlayerDetected().transform;
         return player;

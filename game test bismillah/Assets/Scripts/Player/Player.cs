@@ -7,6 +7,7 @@ public class Player : Entity
     public PlayerInputSet input { get; private set; }
     public UI ui { get; private set; }
 
+    #region Player States
     public Player_IdleState idleState { get; private set; }
     public Player_WalkState walkState { get; private set; }
     public Player_RunState runState { get; private set; }
@@ -14,6 +15,7 @@ public class Player : Entity
     public Player_FallState fallState { get; private set; }
     public Player_CaughtState caughtState { get; private set; }
     public Player_RespawnState respawnState { get; private set; }
+    #endregion
 
     public FlashlightController flashlight { get; private set; }
     private Object_Interactable lastPrompted;
@@ -46,7 +48,8 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
-        stateMachine.Initialize(idleState);
+        //stateMachine.Initialize(idleState);
+        stateMachine.Initialize(respawnState);
     }
 
 
@@ -104,32 +107,10 @@ public class Player : Entity
         lastPrompted?.ShowPrompt();
     }
 
-    public void OnCaught() => stateMachine.ChangeState(caughtState);
-
-    //public void StartRespawn(float delay, Action onRespawn)
-    //{
-    //    StartCoroutine(RespawnRoutine(delay, onRespawn));
-    //}
-
-    //private IEnumerator RespawnRoutine(float delay, Action onRespawn)
-    //{
-    //    yield return new WaitForSeconds(delay);
-    //    Respawn();
-    //    onRespawn?.Invoke(); // ganti state
-    //}
-    //private void Respawn()
-    //{
-    //    transform.position = spawnPoint.position;
-    //    StopPlayerControls(true);
-    //}
-
-
-    public void StopPlayerControls(bool stopControls)
+    public void OnCaught()
     {
-        if (stopControls)
-            input.Player.Disable();
-        else
-            input.Player.Enable();
+        stateMachine.ChangeState(caughtState);
+        GameManager.instance.OnPlayerCaught();
     }
 
     private void OnEnable()
@@ -147,9 +128,7 @@ public class Player : Entity
         };
     }
 
-    private void OnDisable()
-    {
-        input.Disable();
-    }
+    private void OnDisable() => input.Disable();
+
 
 }

@@ -6,12 +6,12 @@ public class Ghost_IdleState : GhostState
     {
     }
 
-    //public override void Enter()
-    //{
-    //    base.Enter();
+    public override void Enter()
+    {
+        base.Enter();
 
-    //    //ghost.ClearTrigger();
-    //}
+        ghost.SetIdlePosition(ghost.transform.position);
+    }
 
     public override void Update()
     {
