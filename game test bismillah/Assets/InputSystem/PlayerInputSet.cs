@@ -300,7 +300,7 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
             ""id"": ""244959e5-3714-4554-bd28-d530f6f78787"",
             ""actions"": [
                 {
-                    ""name"": ""DialogueInteract"",
+                    ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""f5c47370-8692-42ee-8dd7-e83937f1626c"",
                     ""expectedControlType"": """",
@@ -312,23 +312,12 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""900a16aa-7464-4806-b430-8425e94f5e81"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""DialogueInteract"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""72fd51f6-cba5-40d6-bb2e-d869b48e0504"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard & Mouse"",
-                    ""action"": ""DialogueInteract"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -363,7 +352,7 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         m_Player_Flashlight = m_Player.FindAction("Flashlight", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_DialogueInteract = m_UI.FindAction("DialogueInteract", throwIfNotFound: true);
+        m_UI_Interact = m_UI.FindAction("Interact", throwIfNotFound: true);
     }
 
     ~@PlayerInputSet()
@@ -585,7 +574,7 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
     // UI
     private readonly InputActionMap m_UI;
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
-    private readonly InputAction m_UI_DialogueInteract;
+    private readonly InputAction m_UI_Interact;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -598,9 +587,9 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         /// </summary>
         public UIActions(@PlayerInputSet wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "UI/DialogueInteract".
+        /// Provides access to the underlying input action "UI/Interact".
         /// </summary>
-        public InputAction @DialogueInteract => m_Wrapper.m_UI_DialogueInteract;
+        public InputAction @Interact => m_Wrapper.m_UI_Interact;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -627,9 +616,9 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
-            @DialogueInteract.started += instance.OnDialogueInteract;
-            @DialogueInteract.performed += instance.OnDialogueInteract;
-            @DialogueInteract.canceled += instance.OnDialogueInteract;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         /// <summary>
@@ -641,9 +630,9 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         /// <seealso cref="UIActions" />
         private void UnregisterCallbacks(IUIActions instance)
         {
-            @DialogueInteract.started -= instance.OnDialogueInteract;
-            @DialogueInteract.performed -= instance.OnDialogueInteract;
-            @DialogueInteract.canceled -= instance.OnDialogueInteract;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         /// <summary>
@@ -741,11 +730,11 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
     public interface IUIActions
     {
         /// <summary>
-        /// Method invoked when associated input action "DialogueInteract" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Interact" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnDialogueInteract(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

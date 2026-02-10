@@ -58,6 +58,7 @@ public class Object_ItemPickup : Object_Interactable
         if (inventory.CanAddItem(itemToAdd))
         {
             inventory.AddItem(itemToAdd);
+            AudioManager.instance.PlayGlobalSFX("item_pickup");
 
             EmitTrigger();
             Destroy(gameObject);

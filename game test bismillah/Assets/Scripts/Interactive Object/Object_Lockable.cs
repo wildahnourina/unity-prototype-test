@@ -14,7 +14,10 @@ public class Object_Lockable : MonoBehaviour
         Inventory_Item item = inventory.GetItemById(requiredKeyId);
 
         if (item == null)
+        {
+            AudioManager.instance.PlayGlobalSFX("object_locked");
             return false;
+        }
 
         isLocked = false;
         inventory.RemoveOneItem(item);

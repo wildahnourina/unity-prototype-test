@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495a718714dfc9547bf5e8cf4eeec7bf, type: 3}
+  m_Name: AudioDatabase
+  m_EditorClassIdentifier: 
+  player:
+  - audioName: player_footstep
+    clips: []
+    maxVolume: 0.381
+  - audioName: player_caught
+    clips: []
+    maxVolume: 0
+  ghost:
+  - audioName: ghost_eating
+    clips:
+    - {fileID: 8300000, guid: 3d63db1214b754447b714f55f49bf9f9, type: 3}
+    maxVolume: 0.538
+  - audioName: ghost_hiss
+    clips:
+    - {fileID: 8300000, guid: 0e8f4ed34d5403b4da1d838767c6c5a7, type: 3}
+    maxVolume: 0.063
+  - audioName: ghost_growl
+    clips:
+    - {fileID: 8300000, guid: 3d264190a7b458c408b941396e145544, type: 3}
+    maxVolume: 0.125
+  environment:
+  - audioName: toggle
+    clips:
+    - {fileID: 8300000, guid: ace7a155b962ff24385d0a84b858907a, type: 3}
+    maxVolume: 1
+  - audioName: bulb_on
+    clips:
+    - {fileID: 8300000, guid: d9695940873f6a543a57568346f34b3e, type: 3}
+    maxVolume: 0.569
+  - audioName: light_flicker
+    clips:
+    - {fileID: 8300000, guid: 040c800123de80a4bb9ade219f95cd08, type: 3}
+    maxVolume: 1
+  stinger:
+  - audioName: trigger_stinger
+    clips: []
+    maxVolume: 0
+  objectInteract:
+  - audioName: door_open
+    clips:
+    - {fileID: 8300000, guid: 8acef4327cdc52f49905cc37182fa5a1, type: 3}
+    maxVolume: 1
+  - audioName: item_pickup
+    clips:
+    - {fileID: 8300000, guid: a691606bf876b9340a6c958d48d03af7, type: 3}
+    maxVolume: 1
+  - audioName: drawer
+    clips:
+    - {fileID: 8300000, guid: 8074d3714a5fcf64fb719194ae6a8957, type: 3}
+    maxVolume: 1
+  - audioName: door_close
+    clips:
+    - {fileID: 8300000, guid: 05b5a34aa925b724bafef279de48be0b, type: 3}
+    maxVolume: 1
+  - audioName: object_locked
+    clips:
+    - {fileID: 8300000, guid: 20494e07c9dec424a806eefe9f50bdb5, type: 3}
+    maxVolume: 1
+  - audioName: note_look
+    clips:
+    - {fileID: 8300000, guid: cd5b0471fc28b1f44b5e73c5a0a26bdc, type: 3}
+    maxVolume: 1
+  uiAudio:
+  - audioName: button_click
+    clips:
+    - {fileID: 8300000, guid: daad4df7845e2b1439ac97bcd508aa8e, type: 3}
+    maxVolume: 0
+  - audioName: dialogue_typing
+    clips:
+    - {fileID: 8300000, guid: 425c63d8494a7ad48b45904a388cb80b, type: 3}
+    maxVolume: 0
+  mainMenuMusic:
+  - audioName: main_menu
+    clips:
+    - {fileID: 8300000, guid: 3e32df283905ea240bbe43b5c24ff667, type: 3}
+    maxVolume: 0
+  mapMusic:
+  - audioName: normal_life
+    clips: []
+    maxVolume: 0.144
+  - audioName: another_dimension
+    clips:
+    - {fileID: 8300000, guid: 3c264f47d5ac7364aab86e4c93edecd3, type: 3}
+    maxVolume: 0.188

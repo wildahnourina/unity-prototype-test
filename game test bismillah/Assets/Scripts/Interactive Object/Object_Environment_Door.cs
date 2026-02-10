@@ -4,10 +4,14 @@ public class Object_Environment_Door : Object_Environment
 {
     private bool isOpen =  false;
 
+    //private string sceneName
+
     protected override void OnInteract()
     {
         if (!isOpen)
         {
+            AudioManager.instance.PlayGlobalSFX("door_open");
+
             isOpen = true;
             RefreshPrompt();
             return;
@@ -16,6 +20,7 @@ public class Object_Environment_Door : Object_Environment
         Debug.Log("Entered room");
         isOpen = false;
         RefreshPrompt();
+        AudioManager.instance.PlayGlobalSFX("door_close");
 
         //ganti scene
     }

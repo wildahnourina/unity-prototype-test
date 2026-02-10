@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : Entity
 {
+    public static Player instance;
     public PlayerInputSet input { get; private set; }
     public UI ui { get; private set; }
 
@@ -30,6 +31,8 @@ public class Player : Entity
     protected override void Awake()
     {
         base.Awake();
+        instance = this;
+
         input = new PlayerInputSet();
         ui = FindAnyObjectByType<UI>();
         flashlight = GetComponentInChildren<FlashlightController>(true);
@@ -48,8 +51,11 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
-        //stateMachine.Initialize(idleState);
-        stateMachine.Initialize(respawnState);
+
+        if (GameManager.instance.isRespawning)
+            stateMachine.Initialize(respawnState);
+        else
+            stateMachine.Initialize(idleState);
     }
 
 
@@ -110,7 +116,7 @@ public class Player : Entity
     public void OnCaught()
     {
         stateMachine.ChangeState(caughtState);
-        GameManager.instance.OnPlayerCaught();
+        GameManager.instance.RestartGame();
     }
 
     private void OnEnable()

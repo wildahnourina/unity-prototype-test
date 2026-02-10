@@ -179,6 +179,8 @@ public class FlashlightController : MonoBehaviour
             StopCoroutine(flickerCo);
 
         flickerCo = StartCoroutine(FlickerCo(duration));
+
+        AudioManager.instance.PlayGlobalSFX("light_flicker");
     }
 
     private void StopFlicker()

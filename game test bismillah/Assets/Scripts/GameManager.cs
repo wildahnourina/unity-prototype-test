@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [HideInInspector]
+    public bool isRespawning;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -17,8 +20,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void OnPlayerCaught()
+    public void RestartGame()
     {
+        isRespawning = true;
         StartCoroutine(ChangeSceneCo());
     }
 

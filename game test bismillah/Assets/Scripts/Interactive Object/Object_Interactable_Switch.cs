@@ -18,6 +18,7 @@ public class Object_Interactable_Switch : Object_Interactable
         if (lightGroup == null) return;
 
         lightGroup.Toggle();
+        AudioManager.instance.PlayGlobalSFX("toggle");
         RefreshPrompt();
     }
 

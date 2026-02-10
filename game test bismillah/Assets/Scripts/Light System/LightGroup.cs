@@ -15,10 +15,12 @@ public class LightGroup : MonoBehaviour
 
     private AnomalyTriggerEmitter emitter;
     private Coroutine emitCo;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         TryGetComponent(out emitter);
+        audioSource = GetComponentInChildren<AudioSource>();
 
         switchOn = startOn;
         SetLights();
@@ -37,7 +39,9 @@ public class LightGroup : MonoBehaviour
             StopFlicker();
 
         SetLights();
+
         HandleEmit();
+        HandleAudio();
     }
 
     // FLICKER (EVENT)
@@ -76,6 +80,17 @@ public class LightGroup : MonoBehaviour
         //kembali ke kondisi saklar
         SetLights();
         flickerCo = null;
+    }
+
+    private void HandleAudio()
+    {
+        var data = AudioManager.instance.GetEnvironment("bulb_on");
+        audioSource.clip = data.GetRandomClip();
+        audioSource.loop = true;
+        if (switchOn)
+            audioSource.Play();
+        else
+            audioSource.Stop();
     }
 
     private void HandleEmit()

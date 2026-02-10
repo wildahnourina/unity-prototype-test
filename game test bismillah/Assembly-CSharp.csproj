@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Light System\LightGroup.cs" />
     <Compile Include="Assets\Scripts\State Machine\PlayerState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_JumpState.cs" />
+    <Compile Include="Assets\Scripts\AudioRangeController.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Interactable.cs" />
     <Compile Include="Assets\Scripts\Interface\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_FallState.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\Anomaly\Anomaly_LightFlicker.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_RespawnState.cs" />
     <Compile Include="Assets\Scripts\State Machine\GhostState.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_ChaseState.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_CaughtState.cs" />
     <Compile Include="Assets\Scripts\State Machine\StateMachine.cs" />
@@ -90,11 +92,13 @@
     <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Locker.cs" />
     <Compile Include="Assets\Scripts\Anomaly\AnomalyTriggerSignals.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost_CriyngWoman.cs" />
+    <Compile Include="Assets\Scripts\UI\UI_Note.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSequence.cs" />
     <Compile Include="Assets\Scripts\Anomaly\AnomalyTriggerEmitter.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSpeaker.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Interactable_Switch.cs" />
     <Compile Include="Assets\Scripts\SpineAnimator.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\SO_AudioDatabase.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Environment.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_IdleState.cs" />
     <Compile Include="Assets\InputSystem\PlayerInputSet.cs" />
@@ -109,9 +113,11 @@
     <Compile Include="Assets\Scripts\UI\UI.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\MapManager.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_CaughtState.cs" />
     <Compile Include="Assets\Scripts\Anomaly\Anomaly.cs" />
     <Compile Include="Assets\Scripts\Inventory System\Inventory_Player.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Interactable_Note.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_GroundedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_RunState.cs" />
   </ItemGroup>
