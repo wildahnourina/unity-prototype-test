@@ -16,5 +16,6 @@ public enum TriggerType
 {
     ItemPickup,
     RoomLightOn,
-    FlashlightNear
+    FlashlightNear,
+    EnteredPointer
 }

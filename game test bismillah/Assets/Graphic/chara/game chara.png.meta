@@ -1,0 +1,1976 @@
+fileFormatVersion: 2
+guid: 1df575c2265af1f4ab31f5702ea5e292
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8406519731401769914
+    second: game chara_0
+  - first:
+      213: 3334873196505840618
+    second: game chara_1
+  - first:
+      213: 9179254187043644926
+    second: game chara_2
+  - first:
+      213: -1106541820122633085
+    second: game chara_3
+  - first:
+      213: 8022184983598728575
+    second: game chara_4
+  - first:
+      213: 2264285621514679815
+    second: game chara_5
+  - first:
+      213: -1985334516411593353
+    second: game chara_6
+  - first:
+      213: -7172508927443546010
+    second: game chara_7
+  - first:
+      213: -5144011042719922662
+    second: game chara_8
+  - first:
+      213: 9038893325282073502
+    second: game chara_9
+  - first:
+      213: -8914142181242958345
+    second: game chara_10
+  - first:
+      213: 3632781990304374453
+    second: game chara_11
+  - first:
+      213: 1689593165389395870
+    second: game chara_12
+  - first:
+      213: 2448375648605511592
+    second: game chara_13
+  - first:
+      213: 5903508297719631595
+    second: game chara_14
+  - first:
+      213: -4555713000303374551
+    second: game chara_15
+  - first:
+      213: 6279539896558476049
+    second: game chara_16
+  - first:
+      213: -8771129120272288986
+    second: game chara_17
+  - first:
+      213: 3663738276295499716
+    second: game chara_18
+  - first:
+      213: -366812674234958234
+    second: game chara_19
+  - first:
+      213: -3845841163683870935
+    second: game chara_20
+  - first:
+      213: -1599927247704475387
+    second: game chara_21
+  - first:
+      213: 1909740353036128133
+    second: game chara_22
+  - first:
+      213: -8566366921567398489
+    second: game chara_23
+  - first:
+      213: 6561354549970183460
+    second: game chara_24
+  - first:
+      213: -6748722985260396608
+    second: game chara_25
+  - first:
+      213: 6719929262046716224
+    second: game chara_26
+  - first:
+      213: -2158638727918385783
+    second: game chara_27
+  - first:
+      213: 4780948059109007251
+    second: game chara_28
+  - first:
+      213: 6758392877599226932
+    second: game chara_29
+  - first:
+      213: 2707261346683294103
+    second: game chara_30
+  - first:
+      213: 2885550764580252744
+    second: game chara_31
+  - first:
+      213: -31528753366398842
+    second: game chara_32
+  - first:
+      213: 1549812131742499159
+    second: game chara_33
+  - first:
+      213: 8707181367072414115
+    second: game chara_34
+  - first:
+      213: 9105043642883627514
+    second: game chara_35
+  - first:
+      213: 5150976287766312201
+    second: game chara_36
+  - first:
+      213: 4696443128432580491
+    second: game chara_37
+  - first:
+      213: -1426597378799689835
+    second: game chara_38
+  - first:
+      213: 8978627128107305067
+    second: game chara_39
+  - first:
+      213: 9211674252159754996
+    second: game chara_40
+  - first:
+      213: 2891108695767710809
+    second: game chara_41
+  - first:
+      213: -7896419355503897184
+    second: game chara_42
+  - first:
+      213: 4159948809027023358
+    second: game chara_43
+  - first:
+      213: -82794805961474416
+    second: game chara_44
+  - first:
+      213: 6189803712147915178
+    second: game chara_45
+  - first:
+      213: 2148280984495646196
+    second: game chara_46
+  - first:
+      213: 1694512627456934563
+    second: game chara_47
+  - first:
+      213: -1569465990254211261
+    second: game chara_48
+  - first:
+      213: -6502614728711946684
+    second: game chara_49
+  - first:
+      213: -7760095359537934041
+    second: game chara_50
+  - first:
+      213: -6946602774762394811
+    second: game chara_51
+  - first:
+      213: 1338992353773614211
+    second: game chara_52
+  - first:
+      213: -3115170415489325506
+    second: game chara_53
+  - first:
+      213: 7942905714422168237
+    second: game chara_54
+  - first:
+      213: 4522155198390752888
+    second: game chara_55
+  - first:
+      213: -3287188985198129569
+    second: game chara_56
+  - first:
+      213: 7121477392502578838
+    second: game chara_57
+  - first:
+      213: 8667986461212453942
+    second: game chara_58
+  - first:
+      213: -4861431150092310673
+    second: game chara_59
+  - first:
+      213: -8548120545756999628
+    second: game chara_60
+  - first:
+      213: -3997938218866760258
+    second: game chara_61
+  - first:
+      213: 1331772402736547554
+    second: game chara_62
+  - first:
+      213: 1657894780550612821
+    second: game chara_63
+  - first:
+      213: -6571637828849345718
+    second: game chara_64
+  - first:
+      213: -103713342121484286
+    second: game chara_65
+  - first:
+      213: 3356363280765908179
+    second: game chara_66
+  - first:
+      213: 2599333435456334287
+    second: game chara_67
+  - first:
+      213: -61437067010644282
+    second: game chara_68
+  - first:
+      213: 173109334511692173
+    second: game chara_69
+  - first:
+      213: -51971595385654631
+    second: game chara_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game chara_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 934
+        width: 205
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c3c7c08da065b80800000000000000
+      internalID: -8406519731401769914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1072
+        width: 42
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebb3b8d089d74e20800000000000000
+      internalID: 3334873196505840618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1009
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5e0c1ac03436f70800000000000000
+      internalID: 9179254187043644926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1009
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ce97ac316c4a0f0800000000000000
+      internalID: -1106541820122633085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_4
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 948
+        width: 179
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7500ed3db6845f60800000000000000
+      internalID: 8022184983598728575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_5
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 948
+        width: 194
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706386ca6cb5c6f10800000000000000
+      internalID: 2264285621514679815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_6
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 929
+        width: 146
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d07fca6cca274e0800000000000000
+      internalID: -1985334516411593353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_7
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 927
+        width: 198
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660d86fc121267c90800000000000000
+      internalID: -7172508927443546010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_8
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1053
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a160ef5f53dcc98b0800000000000000
+      internalID: -5144011042719922662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_9
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1053
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b5618d699907d70800000000000000
+      internalID: 9038893325282073502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_10
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1053
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd00b15aea9a4480800000000000000
+      internalID: -8914142181242958345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_11
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1053
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be578e09fb3a6230800000000000000
+      internalID: 3632781990304374453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 895
+        width: 219
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9776f53804a27710800000000000000
+      internalID: 1689593165389395870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_13
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1003
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af19db2ea06af120800000000000000
+      internalID: 2448375648605511592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 981
+        width: 11
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee4626c4897de150800000000000000
+      internalID: 5903508297719631595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_15
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 927
+        width: 193
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fc946d92bd6c0c0800000000000000
+      internalID: -4555713000303374551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_16
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1014
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bd247f348652750800000000000000
+      internalID: 6279539896558476049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_17
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 1014
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623f51b5980b64680800000000000000
+      internalID: -8771129120272288986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_18
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1014
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf589c0d8638d230800000000000000
+      internalID: 3663738276295499716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_19
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 722
+        width: 102
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e3d15f0d1d8eaf0800000000000000
+      internalID: -366812674234958234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_20
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 981
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9274c0876d3d0aac0800000000000000
+      internalID: -3845841163683870935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_21
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 981
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5093b1e15aaebc9e0800000000000000
+      internalID: -1599927247704475387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_22
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 981
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f82fb9bb2c08a10800000000000000
+      internalID: 1909740353036128133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_23
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 903
+        width: 93
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a59150eba62e1980800000000000000
+      internalID: -8566366921567398489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_24
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 974
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425ad5c133d9e0b50800000000000000
+      internalID: 6561354549970183460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_25
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 694
+        width: 134
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf4a008338b752a0800000000000000
+      internalID: -6748722985260396608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_26
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 842
+        width: 283
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0412c046f0cf14d50800000000000000
+      internalID: 6719929262046716224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_27
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 938
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98506009389fa02e0800000000000000
+      internalID: -2158638727918385783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_28
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 813
+        width: 125
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f19c0ede6595240800000000000000
+      internalID: 4780948059109007251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 313
+        width: 158
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cf4d1c382aacd50800000000000000
+      internalID: 6758392877599226932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 895
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7911433e9df129520800000000000000
+      internalID: 2707261346683294103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_31
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 704
+        width: 159
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ca920d1298b0820800000000000000
+      internalID: 2885550764580252744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_32
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 771
+        width: 208
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688826f04ccff8ff0800000000000000
+      internalID: -31528753366398842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_33
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 771
+        width: 208
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7514a1d2ce9028510800000000000000
+      internalID: 1549812131742499159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_34
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 874
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9504b125f16d870800000000000000
+      internalID: 8707181367072414115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_35
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 903
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9d18ed3fc9b5e70800000000000000
+      internalID: 9105043642883627514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_36
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 903
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90575c684a1fb7740800000000000000
+      internalID: 5150976287766312201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_37
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 722
+        width: 266
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b875c0a742e1d2140800000000000000
+      internalID: 4696443128432580491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_38
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 704
+        width: 283
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f142f0e35b33ce0800000000000000
+      internalID: -1426597378799689835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_39
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 825
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68858d5dcd7a9c70800000000000000
+      internalID: 8978627128107305067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_40
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 754
+        width: 198
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f228924de076df70800000000000000
+      internalID: 9211674252159754996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_41
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 771
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cf6428a084f1820800000000000000
+      internalID: 2891108695767710809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_42
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 654
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5dba5ee684a6290800000000000000
+      internalID: -7896419355503897184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_43
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 313
+        width: 269
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef17dd5c66b1bb930800000000000000
+      internalID: 4159948809027023358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_44
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 694
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e3b69009ad9def0800000000000000
+      internalID: -82794805961474416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_45
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 694
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa188f36ea996e550800000000000000
+      internalID: 6189803712147915178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_46
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 704
+        width: 13
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5e69e5c2a30dd10800000000000000
+      internalID: 2148280984495646196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_47
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 615
+        width: 429
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a20cfab14e148710800000000000000
+      internalID: 1694512627456934563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_48
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 605
+        width: 198
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f47db4ff2283ae0800000000000000
+      internalID: -1569465990254211261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_49
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 313
+        width: 266
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44eb6e74b5212c5a0800000000000000
+      internalID: -6502614728711946684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_50
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 587
+        width: 435
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721959f926a9e4490800000000000000
+      internalID: -7760095359537934041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_51
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 480
+        width: 425
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b6b8eb495b89f90800000000000000
+      internalID: -6946602774762394811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_52
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 476
+        width: 161
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384f3a3937e059210800000000000000
+      internalID: 1338992353773614211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_53
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 457
+        width: 122
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36e3f11301b4c4d0800000000000000
+      internalID: -3115170415489325506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_54
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 416
+        width: 437
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daabd88f9aeda3e60800000000000000
+      internalID: 7942905714422168237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_55
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 317
+        width: 423
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876544b813ce1ce30800000000000000
+      internalID: 4522155198390752888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_56
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 476
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e40b3c80f8162d0800000000000000
+      internalID: -3287188985198129569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_57
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 266
+        width: 418
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e571015f194d260800000000000000
+      internalID: 7121477392502578838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_58
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 317
+        width: 13
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca672f2cfda4870800000000000000
+      internalID: 8667986461212453942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_59
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 371
+        width: 217
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67aabe302ab88cb0800000000000000
+      internalID: -4861431150092310673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_60
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 326
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4309fec47a9fe5980800000000000000
+      internalID: -8548120545756999628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_61
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 230
+        width: 71
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb52d763f587488c0800000000000000
+      internalID: -3997938218866760258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_62
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 317
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6c7cab1f76b7210800000000000000
+      internalID: 1331772402736547554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_63
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 266
+        width: 217
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55781bdd486020710800000000000000
+      internalID: 1657894780550612821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_64
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 266
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b5ae2763adcc4a0800000000000000
+      internalID: -6571637828849345718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_65
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 704
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200616cc3498f8ef0800000000000000
+      internalID: -103713342121484286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_66
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3
+        width: 419
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4773ffe92349e20800000000000000
+      internalID: 3356363280765908179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_67
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 160
+        width: 462
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9ab29dcffa21420800000000000000
+      internalID: 2599333435456334287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_68
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3
+        width: 248
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6e9c4205bb52ff0800000000000000
+      internalID: -61437067010644282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_69
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 3
+        width: 71
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89afd6c502076200800000000000000
+      internalID: 173109334511692173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game chara_70
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3
+        width: 462
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992b0aefb1c574ff0800000000000000
+      internalID: -51971595385654631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      game chara_0: -8406519731401769914
+      game chara_1: 3334873196505840618
+      game chara_10: -8914142181242958345
+      game chara_11: 3632781990304374453
+      game chara_12: 1689593165389395870
+      game chara_13: 2448375648605511592
+      game chara_14: 5903508297719631595
+      game chara_15: -4555713000303374551
+      game chara_16: 6279539896558476049
+      game chara_17: -8771129120272288986
+      game chara_18: 3663738276295499716
+      game chara_19: -366812674234958234
+      game chara_2: 9179254187043644926
+      game chara_20: -3845841163683870935
+      game chara_21: -1599927247704475387
+      game chara_22: 1909740353036128133
+      game chara_23: -8566366921567398489
+      game chara_24: 6561354549970183460
+      game chara_25: -6748722985260396608
+      game chara_26: 6719929262046716224
+      game chara_27: -2158638727918385783
+      game chara_28: 4780948059109007251
+      game chara_29: 6758392877599226932
+      game chara_3: -1106541820122633085
+      game chara_30: 2707261346683294103
+      game chara_31: 2885550764580252744
+      game chara_32: -31528753366398842
+      game chara_33: 1549812131742499159
+      game chara_34: 8707181367072414115
+      game chara_35: 9105043642883627514
+      game chara_36: 5150976287766312201
+      game chara_37: 4696443128432580491
+      game chara_38: -1426597378799689835
+      game chara_39: 8978627128107305067
+      game chara_4: 8022184983598728575
+      game chara_40: 9211674252159754996
+      game chara_41: 2891108695767710809
+      game chara_42: -7896419355503897184
+      game chara_43: 4159948809027023358
+      game chara_44: -82794805961474416
+      game chara_45: 6189803712147915178
+      game chara_46: 2148280984495646196
+      game chara_47: 1694512627456934563
+      game chara_48: -1569465990254211261
+      game chara_49: -6502614728711946684
+      game chara_5: 2264285621514679815
+      game chara_50: -7760095359537934041
+      game chara_51: -6946602774762394811
+      game chara_52: 1338992353773614211
+      game chara_53: -3115170415489325506
+      game chara_54: 7942905714422168237
+      game chara_55: 4522155198390752888
+      game chara_56: -3287188985198129569
+      game chara_57: 7121477392502578838
+      game chara_58: 8667986461212453942
+      game chara_59: -4861431150092310673
+      game chara_6: -1985334516411593353
+      game chara_60: -8548120545756999628
+      game chara_61: -3997938218866760258
+      game chara_62: 1331772402736547554
+      game chara_63: 1657894780550612821
+      game chara_64: -6571637828849345718
+      game chara_65: -103713342121484286
+      game chara_66: 3356363280765908179
+      game chara_67: 2599333435456334287
+      game chara_68: -61437067010644282
+      game chara_69: 173109334511692173
+      game chara_7: -7172508927443546010
+      game chara_70: -51971595385654631
+      game chara_8: -5144011042719922662
+      game chara_9: 9038893325282073502
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

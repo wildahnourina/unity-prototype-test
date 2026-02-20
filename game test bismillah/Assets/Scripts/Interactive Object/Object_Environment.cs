@@ -10,7 +10,11 @@ public abstract class Object_Environment : Object_Interactable
         if (TryGetComponent<Object_Lockable>(out var lockable))
         {
             if (!lockable.TryUnlock(inventory))
+            {
+                objectiveSetter?.SetObjective();
+                AudioManager.instance.PlayGlobalSFX("object_locked");
                 return;
+            }
 
             RefreshPrompt();
         }

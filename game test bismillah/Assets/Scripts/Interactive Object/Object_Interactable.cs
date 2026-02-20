@@ -9,7 +9,8 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
     [SerializeField] private GameObject interactToolTip;
     private TMP_Text promptText;
 
-    private AnomalyTriggerEmitter emitter;
+    protected AnomalyTriggerEmitter emitter;
+    protected ObjectiveSetter objectiveSetter;
 
     protected virtual void Awake()
     {
@@ -18,9 +19,8 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
         interactToolTip.SetActive(false);
 
         TryGetComponent(out emitter);
+        TryGetComponent(out objectiveSetter);
     }
-
-    protected void EmitTrigger() => emitter?.TriggerEmit();
 
     protected void OnTriggerStay2D(Collider2D collision)
     {

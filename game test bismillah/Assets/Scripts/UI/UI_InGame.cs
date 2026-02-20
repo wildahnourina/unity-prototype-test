@@ -11,6 +11,9 @@ public class UI_InGame : MonoBehaviour
     [SerializeField] private Slider batterySlider;
     [SerializeField] private TextMeshProUGUI batteryText;
 
+    [Header("Objective Text")]
+    [SerializeField] private TextMeshProUGUI objectiveText;
+
     private void Start()
     {
         player = FindFirstObjectByType<Player>();        
@@ -20,6 +23,15 @@ public class UI_InGame : MonoBehaviour
 
         player.flashlight.OnHasFlashlight += FlashlightActive;
         FlashlightActive(player.flashlight.gameObject.activeSelf);
+
+        ObjectiveManager.instance.OnObjectiveChanged += UpdateObjectiveText;
+        UpdateObjectiveText("");
+    }
+
+    private void UpdateObjectiveText(string text)
+    {
+        objectiveText.text = text;
+        objectiveText.transform.parent.gameObject.SetActive(!string.IsNullOrEmpty(text));
     }
 
     private void FlashlightActive(bool active) => batterySlider.gameObject.SetActive(active);

@@ -1,0 +1,531 @@
+
+game chara.png
+size: 1922,1095
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+A
+  rotate: false
+  xy: 1705, 160
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+A 2
+  rotate: false
+  xy: 1608, 49
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+Back_Arm_Fist
+  rotate: true
+  xy: 434, 2
+  size: 85, 92
+  orig: 85, 92
+  offset: 0, 0
+  index: -1
+Back_Arm_Lower
+  rotate: false
+  xy: 1847, 868
+  size: 73, 225
+  orig: 73, 225
+  offset: 0, 0
+  index: -1
+Back_Arm_Upper
+  rotate: false
+  xy: 434, 89
+  size: 104, 285
+  orig: 104, 285
+  offset: 0, 0
+  index: -1
+Back_Leg_Feet
+  rotate: false
+  xy: 1781, 318
+  size: 132, 124
+  orig: 132, 124
+  offset: 0, 0
+  index: -1
+Front_Leg_Feet
+  rotate: false
+  xy: 1781, 318
+  size: 132, 124
+  orig: 132, 124
+  offset: 0, 0
+  index: -1
+Back_Leg_Lower
+  rotate: true
+  xy: 707, 394
+  size: 115, 437
+  orig: 115, 437
+  offset: 0, 0
+  index: -1
+Front_Leg_Lower
+  rotate: true
+  xy: 707, 394
+  size: 115, 437
+  orig: 115, 437
+  offset: 0, 0
+  index: -1
+Back_Leg_Upper
+  rotate: true
+  xy: 707, 682
+  size: 148, 420
+  orig: 148, 420
+  offset: 0, 0
+  index: -1
+Back_PantsLower
+  rotate: true
+  xy: 1148, 483
+  size: 133, 427
+  orig: 133, 427
+  offset: 0, 0
+  index: -1
+Front_PantsLower
+  rotate: true
+  xy: 1148, 483
+  size: 133, 427
+  orig: 133, 427
+  offset: 0, 0
+  index: -1
+Back_PantsUpper
+  rotate: true
+  xy: 1148, 618
+  size: 161, 425
+  orig: 161, 425
+  offset: 0, 0
+  index: -1
+Back_Shoes
+  rotate: true
+  xy: 1059, 13
+  size: 154, 148
+  orig: 154, 148
+  offset: 0, 0
+  index: -1
+Shoes
+  rotate: true
+  xy: 1059, 13
+  size: 154, 148
+  orig: 154, 148
+  offset: 0, 0
+  index: -1
+Back_Sleeve_Fold
+  rotate: true
+  xy: 1577, 493
+  size: 127, 196
+  orig: 127, 196
+  offset: 0, 0
+  index: -1
+Back_Sleeve_LongLower
+  rotate: true
+  xy: 1595, 727
+  size: 103, 219
+  orig: 103, 219
+  offset: 0, 0
+  index: -1
+Back_Sleeve_LongUpper
+  rotate: false
+  xy: 540, 117
+  size: 136, 285
+  orig: 136, 285
+  offset: 0, 0
+  index: -1
+Back_Sleeve_Short
+  rotate: false
+  xy: 1796, 444
+  size: 124, 195
+  orig: 124, 195
+  offset: 0, 0
+  index: -1
+Body_Top
+  rotate: false
+  xy: 437, 404
+  size: 268, 379
+  orig: 268, 379
+  offset: 0, 0
+  index: -1
+Body_Uniform
+  rotate: false
+  xy: 164, 376
+  size: 271, 407
+  orig: 271, 407
+  offset: 0, 0
+  index: -1
+C
+  rotate: false
+  xy: 437, 376
+  size: 42, 26
+  orig: 42, 26
+  offset: 0, 0
+  index: -1
+C 2
+  rotate: false
+  xy: 540, 89
+  size: 42, 26
+  orig: 42, 26
+  offset: 0, 0
+  index: -1
+Cuplikan layar 2026-02-12 134809
+  rotate: false
+  xy: 2, 785
+  size: 702, 308
+  orig: 702, 308
+  offset: 0, 0
+  index: -1
+E
+  rotate: true
+  xy: 164, 164
+  size: 37, 28
+  orig: 37, 28
+  offset: 0, 0
+  index: -1
+E 2
+  rotate: false
+  xy: 1742, 165
+  size: 37, 28
+  orig: 37, 28
+  offset: 0, 0
+  index: -1
+EYEBROWS1_back
+  rotate: true
+  xy: 663, 71
+  size: 44, 13
+  orig: 44, 13
+  offset: 0, 0
+  index: -1
+EYEBROWS1_front
+  rotate: true
+  xy: 1129, 719
+  size: 60, 15
+  orig: 60, 15
+  offset: 0, 0
+  index: -1
+EYEBROWS2_back
+  rotate: false
+  xy: 211, 11
+  size: 44, 13
+  orig: 44, 13
+  offset: 0, 0
+  index: -1
+EYEBROWS2_front
+  rotate: true
+  xy: 1128, 332
+  size: 60, 15
+  orig: 60, 15
+  offset: 0, 0
+  index: -1
+EYELID1_back
+  rotate: false
+  xy: 481, 378
+  size: 36, 24
+  orig: 36, 24
+  offset: 0, 0
+  index: -1
+EYELID1_front
+  rotate: true
+  xy: 1552, 273
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1
+EYELID2_back
+  rotate: false
+  xy: 584, 91
+  size: 36, 24
+  orig: 36, 24
+  offset: 0, 0
+  index: -1
+EYELID2_front
+  rotate: true
+  xy: 1552, 224
+  size: 47, 25
+  orig: 47, 25
+  offset: 0, 0
+  index: -1
+EyeCLOSED_back
+  rotate: false
+  xy: 1461, 15
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+EyeCLOSED_front
+  rotate: true
+  xy: 1816, 772
+  size: 58, 29
+  orig: 58, 29
+  offset: 0, 0
+  index: -1
+FaceBlank
+  rotate: true
+  xy: 211, 26
+  size: 175, 221
+  orig: 175, 221
+  offset: 0, 0
+  index: -1
+Front_Arm_Fist
+  rotate: true
+  xy: 528, 2
+  size: 85, 92
+  orig: 85, 92
+  offset: 0, 0
+  index: -1
+Front_Arm_Lower
+  rotate: false
+  xy: 1847, 641
+  size: 73, 225
+  orig: 73, 225
+  offset: 0, 0
+  index: -1
+Front_Arm_Upper
+  rotate: true
+  xy: 678, 150
+  size: 104, 285
+  orig: 104, 285
+  offset: 0, 0
+  index: -1
+Front_Leg_Upper
+  rotate: true
+  xy: 1146, 327
+  size: 154, 431
+  orig: 154, 431
+  offset: 0, 0
+  index: -1
+Front_PantsUpper
+  rotate: true
+  xy: 707, 511
+  size: 169, 439
+  orig: 169, 439
+  offset: 0, 0
+  index: -1
+Front_Sleeve_Fold
+  rotate: false
+  xy: 1781, 120
+  size: 127, 196
+  orig: 127, 196
+  offset: 0, 0
+  index: -1
+Front_Sleeve_LongLower
+  rotate: true
+  xy: 1575, 622
+  size: 103, 219
+  orig: 103, 219
+  offset: 0, 0
+  index: -1
+Front_Sleeve_LongUpper
+  rotate: true
+  xy: 678, 256
+  size: 136, 285
+  orig: 136, 285
+  offset: 0, 0
+  index: -1
+Front_Sleeve_Short
+  rotate: true
+  xy: 1411, 45
+  size: 124, 195
+  orig: 124, 195
+  offset: 0, 0
+  index: -1
+HairBack1
+  rotate: false
+  xy: 2, 164
+  size: 160, 619
+  orig: 160, 619
+  offset: 0, 0
+  index: -1
+HairBack2
+  rotate: false
+  xy: 1595, 832
+  size: 250, 261
+  orig: 250, 261
+  offset: 0, 0
+  index: -1
+HairBack3
+  rotate: true
+  xy: 164, 203
+  size: 171, 268
+  orig: 171, 268
+  offset: 0, 0
+  index: -1
+HairTop1
+  rotate: false
+  xy: 861, 10
+  size: 196, 138
+  orig: 196, 138
+  offset: 0, 0
+  index: -1
+HairTop2
+  rotate: false
+  xy: 678, 2
+  size: 181, 146
+  orig: 181, 146
+  offset: 0, 0
+  index: -1
+HairTop3
+  rotate: false
+  xy: 2, 7
+  size: 207, 155
+  orig: 207, 155
+  offset: 0, 0
+  index: -1
+HairTop4
+  rotate: true
+  xy: 965, 169
+  size: 223, 161
+  orig: 223, 161
+  offset: 0, 0
+  index: -1
+HairTop5
+  rotate: false
+  xy: 1128, 171
+  size: 210, 154
+  orig: 210, 154
+  offset: 0, 0
+  index: -1
+HairTop5-1
+  rotate: false
+  xy: 1340, 171
+  size: 210, 154
+  orig: 210, 154
+  offset: 0, 0
+  index: -1
+HairTop6
+  rotate: false
+  xy: 1579, 344
+  size: 200, 147
+  orig: 200, 147
+  offset: 0, 0
+  index: -1
+HairTop6-1
+  rotate: false
+  xy: 1579, 195
+  size: 200, 147
+  orig: 200, 147
+  offset: 0, 0
+  index: -1
+HairTop6-2
+  rotate: false
+  xy: 1209, 22
+  size: 200, 147
+  orig: 200, 147
+  offset: 0, 0
+  index: -1
+I
+  rotate: true
+  xy: 1411, 2
+  size: 41, 23
+  orig: 41, 23
+  offset: 0, 0
+  index: -1
+I 2
+  rotate: true
+  xy: 1436, 2
+  size: 41, 23
+  orig: 41, 23
+  offset: 0, 0
+  index: -1
+LOWEREYE_back
+  rotate: false
+  xy: 1645, 61
+  size: 33, 21
+  orig: 33, 21
+  offset: 0, 0
+  index: -1
+LOWEREYE_front
+  rotate: true
+  xy: 1775, 577
+  size: 43, 19
+  orig: 43, 19
+  offset: 0, 0
+  index: -1
+LenganbajuPanjang-Atas
+  rotate: true
+  xy: 1129, 938
+  size: 155, 464
+  orig: 155, 464
+  offset: 0, 0
+  index: -1
+LenganbajuPanjang-Atas Copy 3
+  rotate: true
+  xy: 1129, 781
+  size: 155, 464
+  orig: 155, 464
+  offset: 0, 0
+  index: -1
+NOSE
+  rotate: false
+  xy: 1816, 719
+  size: 29, 51
+  orig: 29, 51
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: false
+  xy: 1608, 84
+  size: 95, 109
+  orig: 95, 109
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 1552, 188
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+O 2
+  rotate: false
+  xy: 1705, 124
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+PUPIL_back
+  rotate: false
+  xy: 1575, 755
+  size: 18, 24
+  orig: 18, 24
+  offset: 0, 0
+  index: -1
+PUPIL_front
+  rotate: true
+  xy: 1680, 61
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+Skirt
+  rotate: true
+  xy: 706, 832
+  size: 261, 421
+  orig: 261, 421
+  offset: 0, 0
+  index: -1
+U
+  rotate: true
+  xy: 1502, 22
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+U 2
+  rotate: false
+  xy: 1705, 92
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+WHITEEYE_back
+  rotate: false
+  xy: 622, 70
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+WHITEEYE_front
+  rotate: false
+  xy: 622, 95
+  size: 39, 20
+  orig: 39, 20
+  offset: 0, 0
+  index: -1

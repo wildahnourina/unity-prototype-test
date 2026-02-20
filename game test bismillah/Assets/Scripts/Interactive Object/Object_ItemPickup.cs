@@ -60,7 +60,7 @@ public class Object_ItemPickup : Object_Interactable
             inventory.AddItem(itemToAdd);
             AudioManager.instance.PlayGlobalSFX("item_pickup");
 
-            EmitTrigger();
+            emitter?.TriggerEmit();
             Destroy(gameObject);
         }
     }
