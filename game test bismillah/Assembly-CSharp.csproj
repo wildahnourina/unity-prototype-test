@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Interactive Object\Object_ItemPickup.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_WalkBackState.cs" />
     <Compile Include="Assets\Scripts\Anomaly\Anomaly_LightFlicker.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_RequireItem.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_RespawnState.cs" />
     <Compile Include="Assets\Scripts\State Machine\GhostState.cs" />
     <Compile Include="Assets\Scripts\Anomaly\Anomaly_SetActive.cs" />
@@ -79,13 +80,13 @@
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_ChaseState.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost State\Ghost_CaughtState.cs" />
     <Compile Include="Assets\Scripts\State Machine\StateMachine.cs" />
-    <Compile Include="Assets\Scripts\Interactive Object\Object_Lockable.cs" />
     <Compile Include="Assets\Scripts\Ghost\Ghost.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
     <Compile Include="Assets\Scripts\UI\UI_ItemSlot.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Inventory.cs" />
     <Compile Include="Assets\Scripts\State Machine\EntityState.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_ItemData.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_GasolineTank.cs" />
     <Compile Include="Assets\Scripts\ObjectiveSetter.cs" />
     <Compile Include="Assets\Scripts\Inventory System\Inventory_Item.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Player_AiredState.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Scripts\Ghost\Ghost_CriyngWoman.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Note.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSequence.cs" />
+    <Compile Include="Assets\Scripts\Interactive Object\Object_Environment_Car.cs" />
     <Compile Include="Assets\Scripts\Anomaly\AnomalyTriggerEmitter.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\SO_DialogueSpeaker.cs" />
     <Compile Include="Assets\Scripts\Interactive Object\Object_Interactable_Switch.cs" />

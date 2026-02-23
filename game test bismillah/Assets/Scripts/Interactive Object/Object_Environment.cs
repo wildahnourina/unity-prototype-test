@@ -3,13 +3,21 @@ using UnityEngine.UIElements;
 
 public abstract class Object_Environment : Object_Interactable
 {
+    protected Object_RequireItem requirement;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        TryGetComponent(out requirement);
+    }
+
     public override void Interact()
     {
         Inventory_Player inventory = player.GetComponent<Inventory_Player>();
 
-        if (TryGetComponent<Object_Lockable>(out var lockable))
+        if (requirement != null)
         {
-            if (!lockable.TryUnlock(inventory))
+            if (!requirement.TryUnlock(inventory))
             {
                 objectiveSetter?.SetObjective();
                 AudioManager.instance.PlayGlobalSFX("object_locked");
@@ -24,12 +32,12 @@ public abstract class Object_Environment : Object_Interactable
 
     protected override string GetPromptText()
     {
-        if (TryGetComponent<Object_Lockable>(out var lockable) && lockable.isLocked)
-            return "(E) Enter the key";
+        if (requirement != null && requirement.isLocked)
+            return GetLockedPrompt();
 
         return GetInteractionPrompt();
     }
-
+    protected virtual string GetLockedPrompt() => GetInteractionPrompt(); //init buat yang gak perlu override method ini
     protected abstract void OnInteract();
     protected abstract string GetInteractionPrompt();
 }

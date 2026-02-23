@@ -25,6 +25,8 @@ public class Object_Environment_Door : Object_Environment
         //ganti scene
     }
 
+    protected override string GetLockedPrompt() => "(E) Enter the key";
+
     protected override string GetInteractionPrompt()
     {
         return isOpen ? "(E) Enter room" : "(E) Open";

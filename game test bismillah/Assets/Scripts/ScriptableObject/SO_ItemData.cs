@@ -22,7 +22,7 @@ public class SO_ItemData : ScriptableObject
 
 public enum ItemType
 {
-    KeyItem,
+    Utility,
     Consumable,
     Equipable
 }

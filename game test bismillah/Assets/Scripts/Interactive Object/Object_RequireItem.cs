@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Object_Lockable : MonoBehaviour
+public class Object_RequireItem : MonoBehaviour
 {
-    [SerializeField] private string requiredKeyId;
+    [SerializeField] private string requiredItemId;
 
     public bool isLocked { get; private set; } = true;
 
@@ -11,7 +11,7 @@ public class Object_Lockable : MonoBehaviour
         if (!isLocked)
             return true;
 
-        Inventory_Item item = inventory.GetItemById(requiredKeyId);
+        Inventory_Item item = inventory.GetItemById(requiredItemId);
 
         if (item == null)
             return false;
@@ -21,4 +21,7 @@ public class Object_Lockable : MonoBehaviour
 
         return true;
     }
+
+    public void Relock() => isLocked = true;
+
 }

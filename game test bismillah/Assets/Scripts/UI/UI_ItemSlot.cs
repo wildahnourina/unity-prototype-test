@@ -26,7 +26,7 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler
 
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            if (itemInSlot.itemData.itemType == ItemType.KeyItem)
+            if (itemInSlot.itemData.itemType == ItemType.Utility)
                 return;
 
             if (itemInSlot.itemData.itemType == ItemType.Consumable)
