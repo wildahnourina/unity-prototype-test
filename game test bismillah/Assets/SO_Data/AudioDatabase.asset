@@ -32,6 +32,10 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: 3d264190a7b458c408b941396e145544, type: 3}
     maxVolume: 0.125
+  - audioName: ghost_crying
+    clips:
+    - {fileID: 8300000, guid: 8e3541663cfab3440accfc34dd1cba32, type: 3}
+    maxVolume: 0.468
   environment:
   - audioName: toggle
     clips:
@@ -87,7 +91,7 @@ MonoBehaviour:
   - audioName: main_menu
     clips:
     - {fileID: 8300000, guid: 3e32df283905ea240bbe43b5c24ff667, type: 3}
-    maxVolume: 0
+    maxVolume: 0.704
   mapMusic:
   - audioName: normal_life
     clips: []

@@ -9,6 +9,8 @@ public class Object_ItemPickup : Object_Interactable
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Collider2D col;
 
+    public string ItemID => itemData.itemId;
+
     private void OnValidate()
     {
         if (itemData == null)

@@ -13,7 +13,7 @@ public class TriggerPoint : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player")) return;
+        if (collision.gameObject.layer != LayerMask.NameToLayer("Player")) return;
 
         emitter?.TriggerEmit();
         objectiveSetter?.SetObjective();

@@ -12,3 +12,5 @@ public class ObjectiveSetter : MonoBehaviour
         ObjectiveManager.instance.ShowObjective(objectiveText, duration);
     }
 }
+
+//Objective setter konsepnya sama kaya Emitter

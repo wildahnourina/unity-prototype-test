@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 2353580793446686611}
   - component: {fileID: 9055534809124997755}
   m_Layer: 9
-  m_Name: Object_ItemPickup - Key Door 1
+  m_Name: Object_ItemPickup - Warehouse's key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

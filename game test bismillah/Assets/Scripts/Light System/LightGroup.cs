@@ -88,9 +88,15 @@ public class LightGroup : MonoBehaviour
         audioSource.clip = data.GetRandomClip();
         audioSource.loop = true;
         if (switchOn)
-            audioSource.Play();
+        {
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+        }
         else
-            audioSource.Stop();
+        {
+            if (audioSource.isPlaying)
+                audioSource.Stop();
+        }
     }
 
     private void HandleEmit()

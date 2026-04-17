@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Object_Environment_Door : Object_Environment
 {
-    private bool isOpen =  false;
+    [Header("Details")]
+    public string targetRoomId;
+    public string connectionId;//id pintu darimana berasal untuk spawnpoint di room tujuan
+    public Transform spawnPoint;
 
-    //private string sceneName
+    private bool isOpen =  false;
 
     protected override void OnInteract()
     {
@@ -22,7 +25,7 @@ public class Object_Environment_Door : Object_Environment
         RefreshPrompt();
         AudioManager.instance.PlayGlobalSFX("door_close");
 
-        //ganti scene
+        RoomManager.instance.SwitchRoom(targetRoomId, connectionId, player.transform);
     }
 
     protected override string GetLockedPrompt() => "(E) Enter the key";

@@ -8,6 +8,9 @@ public class UI : MonoBehaviour
 
     public UI_Dialogue dialogueUI { get; private set; }
     public UI_Note noteUI { get; private set; }
+    public UI_FadeScreen fadeScreenUI { get; private set; }
+    public UI_Options optionsUI { get; private set; }
+
 
     private void Awake()
     {
@@ -15,6 +18,8 @@ public class UI : MonoBehaviour
 
         dialogueUI = GetComponentInChildren<UI_Dialogue>(true);
         noteUI = GetComponentInChildren<UI_Note>(true);
+        fadeScreenUI = GetComponentInChildren<UI_FadeScreen>(true);
+        optionsUI = GetComponentInChildren<UI_Options>(true);
     }
 
     public void SetupControlsUI(PlayerInputSet inputSet)

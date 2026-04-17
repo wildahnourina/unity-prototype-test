@@ -59,4 +59,5 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
 
     protected abstract string GetPromptText();
     public abstract void Interact();
+    public virtual void Interact(Vector2 direction) { }
 }

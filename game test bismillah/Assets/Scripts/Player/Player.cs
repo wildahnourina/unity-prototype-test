@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Entity
 {
@@ -22,6 +23,8 @@ public class Player : Entity
     private Object_Interactable lastPrompted;
 
     public Vector2 moveInput { get; private set; }
+    private Vector2 lastMoveInput;
+
     [Header("Movement Details")]
     public float moveSpeed;
     public float jumpForce = 5;
@@ -53,7 +56,10 @@ public class Player : Entity
         base.Start();
 
         if (GameManager.instance.isRespawning)
+        {
+            GameManager.instance.isRespawning = false;
             stateMachine.Initialize(respawnState);
+        }
         else
             stateMachine.Initialize(idleState);
     }
@@ -63,9 +69,10 @@ public class Player : Entity
     {
         base.Update();
         UpdatePrompt();
+
+        HandleDirectionalInteract();
     }
-
-
+    
     private void TryInteract()
     {
         IInteractable closest = GetClosestInteractable();
@@ -74,6 +81,33 @@ public class Player : Entity
             return;
 
         closest.Interact();
+    }
+
+    private void TryEnterArea(Vector2 dir)
+    {
+        IInteractable closest = GetClosestInteractable();
+
+        if (closest == null)
+            return;
+
+        closest.Interact(dir);
+    }
+
+    void HandleDirectionalInteract()
+    {
+        if (moveInput == Vector2.zero)
+        {
+            lastMoveInput = Vector2.zero;
+            return;
+        }
+
+        // cuma trigger saat pertama kali pencet arah
+        if (lastMoveInput == Vector2.zero)
+        {
+            TryEnterArea(moveInput);
+        }
+
+        lastMoveInput = moveInput;
     }
 
     public IInteractable GetClosestInteractable()
@@ -116,7 +150,8 @@ public class Player : Entity
     public void OnCaught()
     {
         stateMachine.ChangeState(caughtState);
-        GameManager.instance.RestartGame();
+        GameManager.instance.isRespawning = true;
+        GameManager.instance.ChangeScene(SceneManager.GetActiveScene().name, 1.2f);
     }
 
     private void OnEnable()
