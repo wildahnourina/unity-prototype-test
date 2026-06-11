@@ -1,11 +1,15 @@
 using UnityEngine;
 
-public class Player_CaughtState : Player_GroundedState
+public class Player_CaughtState : PlayerState
 {
-    public Player_CaughtState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    public Player_CaughtState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
-        loopAnim = false;
     }
+
+    //public Player_CaughtState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    //{
+    //    loopAnim = false;
+    //}
 
     public override void Enter()
     {

@@ -19,7 +19,12 @@ public class Object_Environment_GasolineTank : Object_Environment
         if (inventory.CanAddItem(itemToAdd))
             inventory.AddItem(itemToAdd);
 
+        if (inventory.GetItemCount(full_jerrycan) >= 2)
+            GameManager.instance.task1Completed = true;
+
         requirement?.Relock();
+
+        //empty_jerrycan nya dihapus di requireItem
     }
 
     protected override string GetInteractionPrompt() => "(E) Take gasoline";

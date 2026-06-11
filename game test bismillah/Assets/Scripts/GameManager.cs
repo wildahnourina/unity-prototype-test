@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public bool isRespawning;
+    public bool task1Completed = false;
+
+    private TriggerEmitter dialogue_emitter;
 
     private void Awake()
     {
@@ -18,6 +21,34 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+
+        TryGetComponent(out dialogue_emitter);
+    }
+
+    private void Start()
+    {
+        GameIntro();
+    }
+
+    private void GameIntro()
+    {
+        StartCoroutine(GameIntroCo());
+    }
+
+    private IEnumerator GameIntroCo()
+    {
+        UI_FadeScreen fadeScreen = FindFadeScreenUI(); 
+        fadeScreen.DoFadeIn();
+
+        yield return new WaitForSeconds(1f);
+
+        dialogue_emitter.TriggerEmit();
+
+        // nanti bisa tambah:
+        // fade
+        // lock movement
+        // music
+        // camera pan
     }
 
     public void ChangeScene(string sceneName, float delayIfNeeded = 0f)

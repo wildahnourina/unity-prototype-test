@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public abstract class Object_Interactable : MonoBehaviour, IInteractable
 {
@@ -9,7 +10,6 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
     [SerializeField] private GameObject interactToolTip;
     private TMP_Text promptText;
 
-    protected AnomalyTriggerEmitter emitter;
     protected ObjectiveSetter objectiveSetter;
 
     protected virtual void Awake()
@@ -18,22 +18,22 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
         promptText = interactToolTip.GetComponentInChildren<TMP_Text>(true);
         interactToolTip.SetActive(false);
 
-        TryGetComponent(out emitter);
+        player = FindFirstObjectByType<Player>();
         TryGetComponent(out objectiveSetter);
     }
 
-    protected void OnTriggerStay2D(Collider2D collision)
-    {
-        if (!collision.TryGetComponent(out Player player))
-            return;
-        this.player = player;
-    }
+    //protected void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (!collision.TryGetComponent(out Player player))
+    //        return;
+    //    this.player = player;
+    //}
 
-    protected void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent(out Player player) && this.player == player)
-            this.player = null;
-    }
+    //protected void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.TryGetComponent(out Player player) && this.player == player)
+    //        this.player = null;
+    //}
 
     public void ShowPrompt()
     {
@@ -58,6 +58,6 @@ public abstract class Object_Interactable : MonoBehaviour, IInteractable
     }
 
     protected abstract string GetPromptText();
-    public abstract void Interact();
+    public abstract void Interact(Player player);
     public virtual void Interact(Vector2 direction) { }
 }

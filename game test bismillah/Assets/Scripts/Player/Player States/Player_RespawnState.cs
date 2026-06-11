@@ -1,14 +1,18 @@
 using UnityEngine;
 
-public class Player_RespawnState : Player_GroundedState
+public class Player_RespawnState : PlayerState
 {
     private float timer;
     private const float wakeTime = 1.5f;
 
-    public Player_RespawnState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    public Player_RespawnState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
-        loopAnim = false;
     }
+
+    //public Player_RespawnState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    //{
+    //    loopAnim = false;
+    //}
 
     public override void Enter()
     {

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using static Spine.Unity.Examples.EquipSystemExample;
+using NUnit.Framework.Interfaces;
 
 public class Inventory_Player : MonoBehaviour
 {
@@ -39,8 +40,11 @@ public class Inventory_Player : MonoBehaviour
 
         Vector3 dropPos = transform.position + transform.forward;
 
-        GameObject newItem = Instantiate(itemDropPrefab, dropPos, Quaternion.identity);
-        newItem.GetComponent<Object_ItemPickup>().SetupItem(itemToDrop);
+        GameObject newItem = Instantiate(itemDropPrefab, dropPos, Quaternion.identity, RoomManager.instance.CurrentRoom.ObjectParent);
+        Object_ItemPickup item = newItem.GetComponent<Object_ItemPickup>();
+
+        item.SetupItem(itemToDrop);
+        item.ApplyDropForce();
     }
 
     public void UseItem(Inventory_Item itemToUse)
@@ -84,6 +88,20 @@ public class Inventory_Player : MonoBehaviour
 
         return itemList.Find(item => item != null && item.itemData != null && item.itemData.itemId == itemId);
     }
+
+    public int GetItemCount(string itemId)
+    {
+        int count = 0;
+
+        foreach (var item in itemList)
+        {
+            if (item.itemData.itemId == itemId)
+                count += item.stackSize;
+        }
+        return count;
+    }
+
+    public int GetItemCount(SO_ItemData data) => GetItemCount(data.itemId);   
 
     public bool CanAddItem(Inventory_Item itemToAdd)
     {

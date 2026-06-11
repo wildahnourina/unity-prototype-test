@@ -9,6 +9,14 @@ public class Object_ItemPickup : Object_Interactable
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Collider2D col;
 
+    private TriggerEmitter itemPickup_emitter;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        TryGetComponent(out itemPickup_emitter);
+    }
     public string ItemID => itemData.itemId;
 
     private void OnValidate()
@@ -24,6 +32,14 @@ public class Object_ItemPickup : Object_Interactable
     {
         this.itemData = itemData;
         SetupVisual();
+
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        col.isTrigger = true;
+    }
+
+    public void ApplyDropForce()
+    {
+        rb.bodyType = RigidbodyType2D.Dynamic;
 
         float xDropForce = Random.Range(-dropForce.x, dropForce.x);
         rb.linearVelocity = new Vector2(xDropForce, dropForce.y);
@@ -45,7 +61,7 @@ public class Object_ItemPickup : Object_Interactable
         }
     }
 
-    public override void Interact()
+    public override void Interact(Player player)
     {
         if (player == null)
             return;
@@ -62,7 +78,7 @@ public class Object_ItemPickup : Object_Interactable
             inventory.AddItem(itemToAdd);
             AudioManager.instance.PlayGlobalSFX("item_pickup");
 
-            emitter?.TriggerEmit();
+            itemPickup_emitter?.TriggerEmit();
             Destroy(gameObject);
         }
     }
@@ -72,3 +88,27 @@ public class Object_ItemPickup : Object_Interactable
         return "(E) Pick up";
     }
 }
+
+
+//kalau emitter lebih dari 1
+
+//private Dictionary<TriggerType, TriggerEmitter> emitters;
+
+//void Awake()
+//{
+//    emitters = new();
+
+//    foreach (var emitter in GetComponents<TriggerEmitter>())
+//    {
+//        emitters[emitter.TriggerType] = emitter;
+//    }
+//}
+
+//emitters[TriggerType.ItemPickup].TriggerEmit();
+
+//atau
+
+//if (emitters.TryGetValue(TriggerType.ItemPickup, out var emitter))
+//{
+//    emitter.TriggerEmit();
+//}

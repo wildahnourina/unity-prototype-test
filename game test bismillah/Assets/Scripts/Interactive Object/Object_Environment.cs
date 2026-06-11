@@ -11,7 +11,7 @@ public abstract class Object_Environment : Object_Interactable
         TryGetComponent(out requirement);
     }
 
-    public override void Interact()
+    public override void Interact(Player player)
     {
         Inventory_Player inventory = player.GetComponent<Inventory_Player>();
 

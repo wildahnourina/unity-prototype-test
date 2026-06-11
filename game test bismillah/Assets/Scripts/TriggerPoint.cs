@@ -3,7 +3,7 @@ using UnityEngine;
 public class TriggerPoint : MonoBehaviour
 {
     private ObjectiveSetter objectiveSetter;
-    private AnomalyTriggerEmitter emitter;
+    private TriggerEmitter emitter;
 
     private void Awake()
     {

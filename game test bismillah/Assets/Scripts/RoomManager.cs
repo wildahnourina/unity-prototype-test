@@ -15,6 +15,8 @@ public class RoomManager : MonoBehaviour
     [Header("Room Prefabs")]
     [SerializeField] private Room[] roomPrefabs;
 
+    public Room CurrentRoom { get; private set; }
+
     // runtime storage room yang sudah di-instantiate
     private Dictionary<string, Room> loadedRooms = new();
 
@@ -24,11 +26,23 @@ public class RoomManager : MonoBehaviour
         confiner = cam.GetComponent<CinemachineConfiner2D>();
 
         RegisterExistingRooms();
+
+        CurrentRoom = loadedRooms.Values.First(r => r.gameObject.activeSelf);
+    }
+
+    private string ResolveRoom(string roomId)
+    {
+        if (GameManager.instance.task1Completed)
+            return roomId + "_normal";
+
+        return roomId;
     }
 
     public void SwitchRoom(string targetRoomId, string connectionId, Transform player)
     {
-        StartCoroutine(SwitchRoomCo(targetRoomId, connectionId, player));
+        string finalTargetRoomId = ResolveRoom(targetRoomId);//target room berubah ketika kondisi terpenuhi: task 1 completed
+
+        StartCoroutine(SwitchRoomCo(finalTargetRoomId, connectionId, player));
     }
 
     private IEnumerator SwitchRoomCo(string targetRoomId, string connectionId, Transform player)
@@ -105,6 +119,8 @@ public class RoomManager : MonoBehaviour
 
     private void SetActiveRoom(Room activeRoom)
     {
+        CurrentRoom = activeRoom;
+
         foreach (var room in loadedRooms.Values)
             room.gameObject.SetActive(room == activeRoom); //room yang lain brati inactive karena SetActive(false);
     }

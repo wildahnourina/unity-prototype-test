@@ -13,7 +13,7 @@ public class Object_Interactable_Switch : Object_Interactable
         isOn = lightGroup.IsOn;
     }
 
-    public override void Interact()
+    public override void Interact(Player player)
     {
         if (lightGroup == null) return;
 

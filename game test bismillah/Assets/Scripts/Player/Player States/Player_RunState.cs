@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class Player_RunState : Player_GroundedState
+public class Player_RunState : PlayerState
 {
-    public Player_RunState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    public Player_RunState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
     }
+
+    //public Player_RunState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    //{
+    //}
 
     public override void Update()
     {

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
     public Collider2D col { get; private set; }
 
     public StateMachine stateMachine;
-    protected SkeletonAnimation skeletonAnim;
-    protected SpineAnimator anim;
+    //protected SkeletonAnimation skeletonAnim;
+    //protected SpineAnimator anim;
 
     private bool facingRight = true;
     public int facingDirection { get; private set; } = 1;
@@ -26,11 +27,12 @@ public class Entity : MonoBehaviour
 
     protected virtual void Awake()
     {
+        anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
 
-        skeletonAnim = GetComponentInChildren<SkeletonAnimation>();
-        anim = new SpineAnimator(skeletonAnim);
+        //skeletonAnim = GetComponentInChildren<SkeletonAnimation>();
+        //anim = new SpineAnimator(skeletonAnim);
 
         stateMachine = new StateMachine();
     }

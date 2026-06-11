@@ -7,7 +7,7 @@ public class Anomaly_Sound : Anomaly
     [SerializeField] private string audioName;
     [SerializeField] private bool loop;
 
-    protected override void OnTriggered(AnomalyTriggerContext ctx)
+    protected override void OnTriggered(TriggerContext ctx)
     {
         var data = AudioManager.instance.GetEnvironment(audioName);
         var clip = data.GetRandomClip();

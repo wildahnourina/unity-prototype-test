@@ -20,7 +20,7 @@ public class FlashlightController : MonoBehaviour
     [SerializeField] private LayerMask ghostMask;
     [SerializeField] private Transform targetCheck;
     [SerializeField] private float targetCheckRadius;
-    private AnomalyTriggerEmitter emitter;
+    private TriggerEmitter emitter;
 
     private float currentBattery;
     private bool isOn;

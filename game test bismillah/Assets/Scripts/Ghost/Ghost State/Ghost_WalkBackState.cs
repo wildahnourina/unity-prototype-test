@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class Ghost_WalkBackState : GhostState
 {
-    public Ghost_WalkBackState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    public Ghost_WalkBackState(Ghost ghost, StateMachine stateMachine, string animBoolName) : base(ghost, stateMachine, animBoolName)
     {
     }
+
+    //public Ghost_WalkBackState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    //{
+    //}
 
     public override void Update()
     {

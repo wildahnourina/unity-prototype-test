@@ -44,7 +44,7 @@ public class Object_NPC : Object_Interactable
         }
     }
 
-    public override void Interact()
+    public override void Interact(Player player)
     {
         ui.OpenDialogueUI(firstDialogueLine);
     }

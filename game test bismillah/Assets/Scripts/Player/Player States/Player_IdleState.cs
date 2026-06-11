@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class Player_IdleState : Player_GroundedState
+public class Player_IdleState : PlayerState
 {
-    public Player_IdleState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    public Player_IdleState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
     }
+
+    //public Player_IdleState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    //{
+    //}
 
     public override void Enter()
     {

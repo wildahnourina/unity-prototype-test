@@ -13,7 +13,7 @@ public class LightGroup : MonoBehaviour
     private bool switchOn;
     public bool IsOn => switchOn;
 
-    private AnomalyTriggerEmitter emitter;
+    private TriggerEmitter emitter;
     private Coroutine emitCo;
     private AudioSource audioSource;
 

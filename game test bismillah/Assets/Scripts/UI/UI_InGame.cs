@@ -8,7 +8,10 @@ public class UI_InGame : MonoBehaviour
     private Player player;
 
     [Header("Battery Percent")]
-    [SerializeField] private Slider batterySlider;
+    //[SerializeField] private Slider batterySlider;
+    [SerializeField] private GameObject batteryUI;
+    [SerializeField] private Image batteryImage;
+    [SerializeField] private Sprite[] batterySprites;
     [SerializeField] private TextMeshProUGUI batteryText;
 
     [Header("Objective Text")]
@@ -34,13 +37,26 @@ public class UI_InGame : MonoBehaviour
         objectiveText.transform.parent.gameObject.SetActive(!string.IsNullOrEmpty(text));
     }
 
-    private void FlashlightActive(bool active) => batterySlider.gameObject.SetActive(active);
+    private void FlashlightActive(bool active) => /*batterySlider*/batteryUI.gameObject.SetActive(active);
 
     private void UpdateBatteryBar(float percent)
     {
-        batterySlider.value = percent;
+        //batterySlider.value = percent;
+        //int batteryValue = Mathf.RoundToInt(percent * 100f);
+        //batteryText.text = batteryValue.ToString();
+
         int batteryValue = Mathf.RoundToInt(percent * 100f);
         batteryText.text = batteryValue.ToString();
+
+        int spriteIndex;
+
+        if (percent <= 0f)
+            spriteIndex = 0; // kosong
+        else
+            spriteIndex = Mathf.CeilToInt(percent * (batterySprites.Length - 1));
+
+        batteryImage.sprite = batterySprites[spriteIndex];
+
     }
 
     private void OnDestroy()

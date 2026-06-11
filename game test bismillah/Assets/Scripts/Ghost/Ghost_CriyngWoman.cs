@@ -6,10 +6,10 @@ public class Ghost_CriyngWoman : Ghost
     {
         base.Awake();
 
-        idleState = new Ghost_IdleState(this, stateMachine, anim, "idle");
-        activeState = new Ghost_ActiveState(this, stateMachine, anim, "head-turn");
-        chaseState = new Ghost_ChaseState(this, stateMachine, anim, "run");
-        caughtState = new Ghost_CaughtState(this, stateMachine, anim, "attack");
-        walkBackState = new Ghost_WalkBackState(this, stateMachine, anim, "walk");
+        //idleState = new Ghost_IdleState(this, stateMachine, "idle");
+        //activeState = new Ghost_ActiveState(this, stateMachine, "head-turn");
+        //chaseState = new Ghost_ChaseState(this, stateMachine, "run");
+        //caughtState = new Ghost_CaughtState(this, stateMachine, "attack");
+        //walkBackState = new Ghost_WalkBackState(this, stateMachine, "walk");
     }
 }

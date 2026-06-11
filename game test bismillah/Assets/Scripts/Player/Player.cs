@@ -12,11 +12,9 @@ public class Player : Entity
     #region Player States
     public Player_IdleState idleState { get; private set; }
     public Player_WalkState walkState { get; private set; }
-    public Player_RunState runState { get; private set; }
-    public Player_JumpState jumpState { get; private set; }
-    public Player_FallState fallState { get; private set; }
-    public Player_CaughtState caughtState { get; private set; }
-    public Player_RespawnState respawnState { get; private set; }
+    //public Player_RunState runState { get; private set; }
+    //public Player_CaughtState caughtState { get; private set; }
+    //public Player_RespawnState respawnState { get; private set; }
     #endregion
 
     public FlashlightController flashlight { get; private set; }
@@ -31,6 +29,8 @@ public class Player : Entity
     [Range(0, 1)]
     public float inAirMultiplier = .4f;
 
+    private IInteractable currentInteractable;
+
     protected override void Awake()
     {
         base.Awake();
@@ -42,25 +42,23 @@ public class Player : Entity
 
         ui.SetupControlsUI(input);
 
-        idleState = new Player_IdleState(this, stateMachine, anim, "idle");
-        walkState = new Player_WalkState(this, stateMachine, anim, "walk");
-        runState = new Player_RunState(this, stateMachine, anim, "run");
-        jumpState = new Player_JumpState(this, stateMachine, anim, "jump");
-        fallState = new Player_FallState(this, stateMachine, anim, "fall");
-        caughtState = new Player_CaughtState(this, stateMachine, anim, "morningstar pose");
-        respawnState = new Player_RespawnState(this, stateMachine, anim, "crouch");
+        idleState = new Player_IdleState(this, stateMachine, "idle");
+        walkState = new Player_WalkState(this, stateMachine, "move");
+        //runState = new Player_RunState(this, stateMachine, "run");
+        //caughtState = new Player_CaughtState(this, stateMachine, "morningstar pose");
+        //respawnState = new Player_RespawnState(this, stateMachine, "crouch");
     }
 
     protected override void Start()
     {
         base.Start();
 
-        if (GameManager.instance.isRespawning)
-        {
-            GameManager.instance.isRespawning = false;
-            stateMachine.Initialize(respawnState);
-        }
-        else
+        //if (GameManager.instance.isRespawning)
+        //{
+        //    GameManager.instance.isRespawning = false;
+        //    stateMachine.Initialize(respawnState);
+        //}
+        //else
             stateMachine.Initialize(idleState);
     }
 
@@ -75,12 +73,12 @@ public class Player : Entity
     
     private void TryInteract()
     {
-        IInteractable closest = GetClosestInteractable();
+        //IInteractable closest = GetClosestInteractable();
 
-        if (closest == null)
-            return;
+        //if (closest == null)
+        //    return;
 
-        closest.Interact();
+        currentInteractable?.Interact(this);
     }
 
     private void TryEnterArea(Vector2 dir)
@@ -124,20 +122,25 @@ public class Player : Entity
 
             float distance = Vector2.Distance(transform.position, target.transform.position);
 
-            if (distance < closestDistance)
+            float distanceX = Mathf.Abs(transform.position.x - target.transform.position.x);
+
+            if (distanceX < closestDistance)
             {
-                closestDistance = distance;
+                closestDistance = distanceX;
                 closest = interactable;
-            }
+            }            
         }
         return closest;
     }
 
     private void UpdatePrompt()
     {
-        IInteractable closest = GetClosestInteractable();
+        //IInteractable closest = GetClosestInteractable();
+        //Object_Interactable current = closest as Object_Interactable;
 
-        Object_Interactable current = closest as Object_Interactable;
+        currentInteractable = GetClosestInteractable();
+        Object_Interactable current = currentInteractable as Object_Interactable;
+
 
         if (current == lastPrompted)
             return;
@@ -149,7 +152,7 @@ public class Player : Entity
 
     public void OnCaught()
     {
-        stateMachine.ChangeState(caughtState);
+        //stateMachine.ChangeState(caughtState);
         GameManager.instance.isRespawning = true;
         GameManager.instance.ChangeScene(SceneManager.GetActiveScene().name, 1.2f);
     }

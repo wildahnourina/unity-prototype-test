@@ -42,7 +42,7 @@ public class Object_WayArea : Object_Interactable
     }
 
     protected override string GetPromptText() => "Go another area";
-    public override void Interact() {}
+    public override void Interact(Player player) {}
 
 }
 

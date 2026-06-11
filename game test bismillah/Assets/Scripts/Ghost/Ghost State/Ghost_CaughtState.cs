@@ -3,30 +3,34 @@ using UnityEngine;
 
 public class Ghost_CaughtState : GhostState
 {
-    public Ghost_CaughtState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    public Ghost_CaughtState(Ghost ghost, StateMachine stateMachine, string animBoolName) : base(ghost, stateMachine, animBoolName)
     {
-        loopAnim = false;
     }
 
-    public override void Enter()
-    {
-        base.Enter();
-        if (entry != null)
-            entry.Complete += OnComplete;
-    }
+    //public Ghost_CaughtState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    //{
+    //    loopAnim = false;
+    //}
 
-    public override void Exit()
-    {
-        base.Exit();
-        if (entry != null)
-            entry.Complete -= OnComplete;
-    }
+    //public override void Enter()
+    //{
+    //    base.Enter();
+    //    if (entry != null)
+    //        entry.Complete += OnComplete;
+    //}
 
-    private void OnComplete(TrackEntry _) 
-    {
-        ghost.ClearTrigger();
-        stateMachine.ChangeState(ghost.idleState);
+    //public override void Exit()
+    //{
+    //    base.Exit();
+    //    if (entry != null)
+    //        entry.Complete -= OnComplete;
+    //}
 
-        player.GetComponent<Player>().OnCaught();
-    } 
+    //private void OnComplete(TrackEntry _) 
+    //{
+    //    ghost.ClearTrigger();
+    //    stateMachine.ChangeState(ghost.idleState);
+
+    //    player.GetComponent<Player>().OnCaught();
+    //} 
 }

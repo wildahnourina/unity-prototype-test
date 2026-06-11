@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class Player_WalkState : Player_GroundedState
+public class Player_WalkState : PlayerState
 {
-    public Player_WalkState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    public Player_WalkState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
     }
+
+    //public Player_WalkState(Player player, StateMachine stateMachine, SpineAnimator anim, string animName) : base(player, stateMachine, anim, animName)
+    //{
+    //}
 
     public override void Update()
     {
@@ -15,10 +19,10 @@ public class Player_WalkState : Player_GroundedState
 
         player.SetVelocity(player.moveInput.x * player.moveSpeed, rb.linearVelocity.y);
 
-        if (input.Player.Run.IsPressed())
-        {
-            stateMachine.ChangeState(player.runState);
-            return;
-        }
+        //if (input.Player.Run.IsPressed())
+        //{
+        //    stateMachine.ChangeState(player.runState);
+        //    return;
+        //}
     }
 }

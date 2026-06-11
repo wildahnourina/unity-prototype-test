@@ -7,4 +7,6 @@ public class Room : MonoBehaviour
 
     public Object_Environment_Door[] doors;
     public Object_WayArea[] wayAreas;
+
+    public Transform ObjectParent;
 }

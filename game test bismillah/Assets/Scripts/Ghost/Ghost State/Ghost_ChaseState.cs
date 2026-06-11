@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class Ghost_ChaseState : GhostState
 {
-    public Ghost_ChaseState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    public Ghost_ChaseState(Ghost ghost, StateMachine stateMachine, string animBoolName) : base(ghost, stateMachine, animBoolName)
     {
-
     }
+
+    //public Ghost_ChaseState(Ghost ghost, StateMachine stateMachine, SpineAnimator anim, string animName) : base(ghost, stateMachine, anim, animName)
+    //{
+
+    //}
 
     public override void Update()
     {
