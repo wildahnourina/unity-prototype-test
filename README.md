@@ -1,17 +1,17 @@
-Side-Scroller Horror Game
+# Side-Scroller Horror Game
 
 A work-in-progress 2D side-scroller horror game built with Unity 6.
 
 This project focuses on gameplay programming and modular system architecture. Temporary placeholder assets are currently used while core mechanics are being developed.
 
-==Features==
+## Features
 
-# Player System
+### Player System
 * Generic Finite State Machine (FSM) architecture.
 * Shared parent entity states extended by PlayerState and GhostState.
 * Built with Unity Input System.
 
-# Interaction System
+### Interaction System
 Interface-based interaction system using `IInteractable`.
 Supports:
 * NPC interactions
@@ -22,7 +22,7 @@ Examples:
 -Picking up the flashlight automatically enables the battery UI.
 -Certain objects require items from the inventory before they can be used.
 
-# Dialogue System
+### Dialogue System
 ScriptableObject-driven dialogue system featuring:
 * Character names
 * Portrait support
@@ -31,7 +31,7 @@ ScriptableObject-driven dialogue system featuring:
 * NPC conversations
 * Triggered player monologues
 
-# Inventory & Item System
+### Inventory & Item System
 Inventory implemented using "List<InventoryItem>".
 Supports:
 * Stackable items
@@ -41,7 +41,7 @@ Supports:
 * Custom item effects if needed
 Item data is stored using ScriptableObjects and supports custom item effects.
 
-# Flashlight System
+### Flashlight System
 Custom flashlight controller featuring:
 * Battery drain over time
 * Configurable low-power threshold
@@ -50,7 +50,7 @@ Custom flashlight controller featuring:
 * Light-based ghost interaction triggers
 The flashlight can be turned off to conserve battery power.
 
-# Enemy AI
+### Enemy AI
 Ghost enemies are built on the same FSM architecture.
 Current states:
 * Idle
@@ -58,7 +58,7 @@ Current states:
 * Chase
 Designed to be expanded with additional behaviors and animations.
 
-# Trigger Event System
+### Trigger Event System
 Custom event-driven trigger architecture consisting of:
 * Trigger Context
 * Trigger Signal
@@ -66,7 +66,7 @@ Custom event-driven trigger architecture consisting of:
 * Trigger Reaction
 This enables dynamic cause-and-effect interactions between gameplay objects.
 
-# Room Transition System
+### Room Transition System
 Room-based transitions managed by a Room Manager.
 Door interactions support:
 * Target room references
@@ -74,23 +74,23 @@ Door interactions support:
 * Spawn points
 Transitions are handled through fade effects.
 
-# Objective System
+### Objective System
 Temporary objective hints are used to guide player progression and exploration.
 
-# Audio System
+### Audio System
 Audio management built around:
 * ScriptableObject audio database
 * Audio Mixer integration
 * Synchronized options settings
 
-==Architecture==
+## Architecture
 * Interface-based interaction system
 * ScriptableObject-driven data
 * Generic Finite State Machine architecture
 * Event-driven trigger system
 * Modular and extensible gameplay systems
 
-==Tech Stack==
+## Tech Stack
 * Unity 6
 * C#
 * URP
@@ -99,6 +99,6 @@ Audio management built around:
 * Audio Mixer
 * Git
 
-==Status==
+## Status
 This project is currently under active development.
 Visual assets are temporary placeholders, with development focused primarily on gameplay systems and architecture.
