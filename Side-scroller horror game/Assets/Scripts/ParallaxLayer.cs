@@ -4,7 +4,9 @@ using UnityEngine;
 public class ParallaxLayer
 {
     [SerializeField] private Transform background;
-    [SerializeField] private float parallaxMultiplier;
+    [SerializeField] private float parallaxMultiplier;//multiplier 0 objek tidak bergerak atau diam (terdekat) jadi terlewati dg mudah,
+                                                      //multiplier 1 objek bergerak speed sama dg kamera, seperti tidak berubah (terjauh)
+    [SerializeField] private bool enableLoop = true;
     [SerializeField] private float imageWidthOffset = 10;//bg akan loop 10 unit lebih awal (offset)
 
     private float imageFullWidth;
@@ -12,6 +14,9 @@ public class ParallaxLayer
 
     public void CalculateImageWidth()
     {
+        if (!enableLoop)
+            return;
+
         imageFullWidth = background.GetComponent<SpriteRenderer>().bounds.size.x;
         imageHalfWidth = imageFullWidth / 2;
     }
@@ -21,6 +26,9 @@ public class ParallaxLayer
     }
     public void LoopBackground(float cameraLeftEdge, float cameraRightEdge)
     {
+        if (!enableLoop)
+            return;
+
         float imageRightEdge = (background.position.x + imageHalfWidth) - imageWidthOffset;
         float imageLeftEdge = (background.position.x - imageHalfWidth) + imageWidthOffset;
 

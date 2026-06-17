@@ -7,24 +7,50 @@ public class Object_Environment_Door : Object_Environment
     public string connectionId;//id pintu darimana berasal untuk spawnpoint di room tujuan
     public Transform spawnPoint;
 
+    private Animator anim;
     private bool isOpen =  false;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        anim = GetComponentInChildren<Animator>();
+    }
+
+    //protected override void OnInteract()
+    //{
+
+    //    if (!isOpen)
+    //    {
+    //        AudioManager.instance.PlayGlobalSFX("door_open");
+
+    //        isOpen = true;
+    //        anim?.SetBool("isOpen", true);
+    //        RefreshPrompt();
+    //        return;
+    //    }
+
+    //    Debug.Log("Entered room");
+    //    isOpen = false;
+    //    anim?.SetBool("isOpen", false);
+    //    RefreshPrompt();
+
+    //    AudioManager.instance.PlayGlobalSFX("door_close");
+    //    RoomManager.instance.SwitchRoom(targetRoomId, connectionId, player.transform);
+    //}
 
     protected override void OnInteract()
     {
-        if (!isOpen)
+        isOpen = !isOpen;
+        anim?.SetBool("isOpen", isOpen);
+        RefreshPrompt();
+
+        if (isOpen)
         {
             AudioManager.instance.PlayGlobalSFX("door_open");
-
-            isOpen = true;
-            RefreshPrompt();
             return;
         }
 
-        Debug.Log("Entered room");
-        isOpen = false;
-        RefreshPrompt();
         AudioManager.instance.PlayGlobalSFX("door_close");
-
         RoomManager.instance.SwitchRoom(targetRoomId, connectionId, player.transform);
     }
 
