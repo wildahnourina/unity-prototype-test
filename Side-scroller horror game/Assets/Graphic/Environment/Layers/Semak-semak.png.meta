@@ -1,49 +1,37 @@
 fileFormatVersion: 2
-guid: 8d5bb554e34a2954ca58e2f98359e73b
+guid: cd3303e0239b0f74d9d40478ec2c5fc6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: -6951152080412933730
+    second: Semak-semak_0
   - first:
-      213: 6623151957235123224
-    second: 3_1
+      213: -4737738715742595928
+    second: Semak-semak_1
   - first:
-      213: 2161284124966242572
-    second: 3_2
+      213: -1973276482105294369
+    second: Semak-semak_2
   - first:
-      213: 1646375367856145251
-    second: 3_3
+      213: -3868854249565300286
+    second: Semak-semak_3
   - first:
-      213: -6250598388044826599
-    second: 3_4
+      213: 1253895321608805092
+    second: Semak-semak_4
   - first:
-      213: -6045798420381719288
-    second: 3_5
+      213: -5954264225435666713
+    second: Semak-semak_5
   - first:
-      213: 3486365374980857469
-    second: 3_6
+      213: -8104295802832639113
+    second: Semak-semak_6
   - first:
-      213: -8897148225897683382
-    second: 3_7
+      213: -964640748963519277
+    second: Semak-semak_7
   - first:
-      213: 8869209736485734012
-    second: 3_8
+      213: -365120162646757555
+    second: Semak-semak_8
   - first:
-      213: 2413808829277165456
-    second: 3_9
-  - first:
-      213: -880868186434942258
-    second: 3_10
-  - first:
-      213: -1786065944184056463
-    second: 3_11
-  - first:
-      213: -6248632946179523363
-    second: 3_12
-  - first:
-      213: -806835659759760455
-    second: 3_13
+      213: 6756745358590643687
+    second: Semak-semak_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Semak-semak_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 247
-        width: 1980
-        height: 833
+        y: 0
+        width: 1512
+        height: 551
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,195 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: e91054bf20c888f90800000000000000
+      internalID: -6951152080412933730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_1
+      name: Semak-semak_1
       rect:
         serializedVersion: 2
-        x: 1662
-        y: 248
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 814ce683d992aeb50800000000000000
-      internalID: 6623151957235123224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_2
-      rect:
-        serializedVersion: 2
-        x: 1730
-        y: 224
-        width: 40
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c09cd4fe57c6efd10800000000000000
-      internalID: 2161284124966242572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_3
-      rect:
-        serializedVersion: 2
-        x: 1248
-        y: 232
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 363c4089ca919d610800000000000000
-      internalID: 1646375367856145251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_4
-      rect:
-        serializedVersion: 2
-        x: 1675
-        y: 230
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91875f612e96149a0800000000000000
-      internalID: -6250598388044826599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_5
-      rect:
-        serializedVersion: 2
-        x: 1756
-        y: 164
-        width: 62
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 805a7816e52091ca0800000000000000
-      internalID: -6045798420381719288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_6
-      rect:
-        serializedVersion: 2
-        x: 1797
-        y: 226
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7e94f446de026030800000000000000
-      internalID: 3486365374980857469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_7
-      rect:
-        serializedVersion: 2
-        x: 1831
-        y: 202
-        width: 65
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a462f51e3daf68480800000000000000
-      internalID: -8897148225897683382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_8
-      rect:
-        serializedVersion: 2
-        x: 1349
-        y: 176
-        width: 47
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c760ba5a343c51b70800000000000000
-      internalID: 8869209736485734012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_9
-      rect:
-        serializedVersion: 2
-        x: 1802
-        y: 213
-        width: 25
+        x: 317
+        y: 534
+        width: 12
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -365,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09754c067529f7120800000000000000
-      internalID: 2413808829277165456
+      spriteID: 8a41c895dbb204eb0800000000000000
+      internalID: -4737738715742595928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_10
+      name: Semak-semak_2
       rect:
         serializedVersion: 2
-        x: 1783
-        y: 194
-        width: 7
-        height: 6
+        x: 506
+        y: 510
+        width: 42
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eca4a9d2d0786c3f0800000000000000
-      internalID: -880868186434942258
+      spriteID: fd14b709e738d94e0800000000000000
+      internalID: -1973276482105294369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_11
+      name: Semak-semak_3
       rect:
         serializedVersion: 2
-        x: 1796
-        y: 198
-        width: 7
-        height: 7
+        x: 599
+        y: 546
+        width: 13
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1759c7b9c7e9637e0800000000000000
-      internalID: -1786065944184056463
+      spriteID: 2c956eede811f4ac0800000000000000
+      internalID: -3868854249565300286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_12
+      name: Semak-semak_4
       rect:
         serializedVersion: 2
-        x: 1928
-        y: 175
-        width: 33
-        height: 26
+        x: 611
+        y: 547
+        width: 29
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddcba2f21756849a0800000000000000
-      internalID: -6248632946179523363
+      spriteID: 4ea540ec62bb66110800000000000000
+      internalID: 1253895321608805092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_13
+      name: Semak-semak_5
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 181
-        width: 6
-        height: 6
+        x: 614
+        y: 542
+        width: 19
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,8 +265,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9bbc6e30e3b8dc4f0800000000000000
-      internalID: -806835659759760455
+      spriteID: 7e63718eb343e5da0800000000000000
+      internalID: -5954264225435666713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semak-semak_6
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 522
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ba87dd7e1c78f80800000000000000
+      internalID: -8104295802832639113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semak-semak_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 527
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4a9268958ec92f0800000000000000
+      internalID: -964640748963519277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semak-semak_8
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 85
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f6b158525deeaf0800000000000000
+      internalID: -365120162646757555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semak-semak_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 85
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed8098da18c4cd50800000000000000
+      internalID: 6756745358590643687
       vertices: []
       indices: 
       edges: []
@@ -473,20 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
-      3_1: 6623151957235123224
-      3_10: -880868186434942258
-      3_11: -1786065944184056463
-      3_12: -6248632946179523363
-      3_13: -806835659759760455
-      3_2: 2161284124966242572
-      3_3: 1646375367856145251
-      3_4: -6250598388044826599
-      3_5: -6045798420381719288
-      3_6: 3486365374980857469
-      3_7: -8897148225897683382
-      3_8: 8869209736485734012
-      3_9: 2413808829277165456
+      Semak-semak_0: -6951152080412933730
+      Semak-semak_1: -4737738715742595928
+      Semak-semak_2: -1973276482105294369
+      Semak-semak_3: -3868854249565300286
+      Semak-semak_4: 1253895321608805092
+      Semak-semak_5: -5954264225435666713
+      Semak-semak_6: -8104295802832639113
+      Semak-semak_7: -964640748963519277
+      Semak-semak_8: -365120162646757555
+      Semak-semak_9: 6756745358590643687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

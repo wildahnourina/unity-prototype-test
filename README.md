@@ -4,6 +4,10 @@ A work-in-progress 2D side-scroller horror game built with Unity 6.
 
 This project focuses on gameplay programming and modular system architecture. Temporary placeholder assets are currently used while core mechanics are being developed.
 
+## Screenshot
+
+![Gameplay 1](Images/image_1.png)
+
 ## Features
 
 ### Player System

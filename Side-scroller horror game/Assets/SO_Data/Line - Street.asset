@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a0b00d5031f9cf4f9914f436829d2fd, type: 3}
-  m_Name: Line - Classroom
+  m_Name: Line - Street
   m_EditorClassIdentifier: 
   speaker: {fileID: 11400000, guid: b9e0044ded83744439080d304fed0709, type: 2}
   lines:
-  - hai boy assalamualaikum warahmatullahi wabarakatuh
+  - Wi wok de tok not only de tok
   - kamu mau kemana..
-  - malam malam gini sebaiknya kamu pulang jangan berkeliaran
-  - jadi ini sudah malam
-  - atau sudah tahu.....
+  - dengan siapa
+  - wlewlewle
+  - udah siap belum

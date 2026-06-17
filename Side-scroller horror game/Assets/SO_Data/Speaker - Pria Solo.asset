@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 269b99543ee97a248a759d33550005be, type: 3}
-  m_Name: Speaker - Student Sarah
+  m_Name: Speaker - Pria Solo
   m_EditorClassIdentifier: 
-  speakerName: Sarah
+  speakerName: Joko
   speakerPortrait: {fileID: 25217575, guid: 678974b0462887e43b6859046a7015b8, type: 3}

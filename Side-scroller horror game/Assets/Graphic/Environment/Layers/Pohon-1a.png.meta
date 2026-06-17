@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e2b553c7b503bdb4194aa42d070a4913
+guid: 94f92f27bf9602f46b8f39c8b69aed08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7028616704906629411
-    second: 7_0
+      213: 3428739489709718247
+    second: Pohon-1a_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7_0
+      name: Pohon-1a_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1980
-        height: 291
+        width: 1549
+        height: 718
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 321165667a9aa8160800000000000000
-      internalID: 7028616704906629411
+      spriteID: 7ea708f4664559f20800000000000000
+      internalID: 3428739489709718247
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      7_0: 7028616704906629411
+      Pohon-1a_0: 3428739489709718247
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
